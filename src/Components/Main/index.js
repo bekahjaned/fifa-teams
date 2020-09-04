@@ -1,17 +1,23 @@
 import React from "react";
-import styled from "styled-components";
+
+import { MainWrap } from "../../Elements/MainWrap/";
+import { MainContent } from "../../Elements/MainContent/";
+import { CardGrid } from "../../Elements/CardGrid/";
 
 class Main extends React.Component {
   render() {
-    const MainWrap = styled.div`
-      grid-column: 1 / 13;
-    `;
-
     return (
       <MainWrap>
-        <h1>Team Guidelines</h1>
-        <h2>lakjsdlkajsdlkajs</h2>
-        <div></div>
+        <MainContent>
+          <h1 className="main-title">Team Guidelines</h1>
+          <p className="main-description">
+            If you would like to submit any team ideas, contact u/StillGrowingUp
+            on Reddit.
+          </p>
+          <CardGrid>
+            <div></div>
+          </CardGrid>
+        </MainContent>
       </MainWrap>
     );
   }

@@ -15,7 +15,7 @@ export const HeroText = styled.div`
 
   .description {
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 35px;
     margin: 0;
     padding-bottom: 16px;

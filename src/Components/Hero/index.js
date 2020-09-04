@@ -19,7 +19,7 @@ class Hero extends React.Component {
             <h1 className="title">Ideas to elevate your Career Mode journey</h1>
             <h2 className="description">
               If you'd like to receive new ideas to enhance your Career Mode
-              campaigns and related News, sign up!
+              campaigns and related news, sign up!
             </h2>
             <SignUpItem
               placeholder="Enter your email"
