@@ -1,0 +1,73 @@
+[
+  {
+    "name": "PSV Eindhoven",
+    "image": "PSV",
+    "league": "Eredivise",
+    "background": "Nicknamed the Rood-witten (red and whites) and one of the most succesful teams in the Netherlands, it is currently seeking to stablish itself as a Champions League regular and as the best Dutch team.",
+    "guidelines": [
+      "Prioritize signing Dutch, Belgian, Argentinian, Brazilian, and Mexican players.",
+      "Develop and sign young Dutch players and promote them to the first team. Sell them when a big European club wants to buy them.",
+      "Favor the 4-3-2-1 formation and focus the attack on the central areas to open space for wingers or right/left backs to further the attack."
+    ],
+    "objectives": [
+      "Aim to win the league and the cup; and qualify for the Champions League.",
+      "Build a team with enough local depth to fight in the Champions League.",
+      "Find a home-grown Dutch striker that will bag at least 20 goals per season.",
+      "Maintain financial fairplay (spend as much as you sell)."
+    ]
+  },
+  {
+    "name": "Juventus F.C.",
+    "image": "Juve",
+    "league": "Serie A",
+    "background": "Nicknamed la Vecchia Signora and the most succesful team in Italy with 36 league titles, it is currently seeking to win it's third Chapions League title since 1996 while rebuilding the team that took them to two CL finals.",
+    "guidelines": [
+      "Prioritize signing Italian, South American, French, and Easter European players.",
+      "Develop young Italian players and loan them out to other Italian teams. Add the best ones to your squad and sell the rest for a profit.",
+      "Sign at least one player per season on a free in their last year of contract.",
+      "Juve’s formation focuses on defence and ball control. It can be a 4-3-3 or 4-3-1-2."
+    ],
+    "objectives": [
+      "Aim to win the treble: league, cup, and Champions League.",
+      "Scout and sign a young player with the potential to be the next world star.",
+      "Re-build the team by signing players to replace the older ones (Chiellini, etc).",
+      "Maintain financial fairplay (spend as much as you sell)."
+    ]
+  },
+  {
+    "name": "Cadiz C.F.",
+    "image": "Cadiz",
+    "league": "La Liga",
+    "background": "Nicknamed The Yellow Submarine and recently promoted to the Spanish first division, it is currently seeking to solidify its status as a regular first division team after spending four seasons in La Liga 2.",
+    "guidelines": [
+      "Prioritize signing Spanish players from the relegation zone and second division. South American players have also been part of their ranks but on a lesser number.",
+      "Signing players is mainly through loans. Change this after revenue increases.",
+      "Cadiz’s formation (4-2-3-1) focuses on defence and quick counter attack using its right and left backs."
+    ],
+    "objectives": [
+      "Initially aim to stay in the first division for 3 years in a row, then aim for mid-table.",
+      "Scout and sign an older and known Spanish striker to replace Alvaro Negredo.",
+      "Turn at least one loanee into a permanent signing per season.",
+      "Maintain financial fairplay (spend as much as you sell)."
+    ]
+  },
+  {
+    "name": "Utrecht F.C.",
+    "image": "Utrecht",
+    "league": "Eredivise",
+    "background": "Utrecht gained interest in the early 2000s by being in international competions and beating teams like Parma in their prime and having won the Dutch super cup three times. Also, they have never been relegated to the second division since its foundation.",
+    "guidelines": [
+      "Buy a former Dutch star player (late 20s) to add experience to the team.",
+      "Acquire two free agents per season from The Netherlands, Belgium, or Germany.",
+      "Only pay up to $2 million for a young prospect. Sell him when his market value reaches $40 million.",
+      "YA scouting should be focused on The Netherlands, Belgium, Germany, and Scandinavian Nations.",
+      "Favor the 4-2-3-1 formation to maximize possession and focus the attack on the middle (3 AM) and the right-wide area (RB)."
+    ],
+    "objectives": [
+      "Train mainly youth players and become the best academy in The Netherlands.",
+      "Become a Europa League regular (at least 2 seasons) and then aim for the Champions League. After 5-6 seasons, aim to win the Dutch double.",
+      "Aim to win home and away matches vs Ajax to show your ambition.",
+      "Maintain financial fairplay (spend as much as you sell)."
+    ]
+  }
+]

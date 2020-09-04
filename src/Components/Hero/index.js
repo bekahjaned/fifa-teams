@@ -14,7 +14,7 @@ class Hero extends React.Component {
     return (
       <HeroWrap>
         <HeroContent>
-          <h2 className="name">CM Toolbox</h2>
+          <h2 className="name">CM Campaigns</h2>
           <HeroText>
             <h1 className="title">Ideas to elevate your Career Mode journey</h1>
             <h2 className="description">
