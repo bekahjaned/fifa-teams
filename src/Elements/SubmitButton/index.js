@@ -8,4 +8,16 @@ export const SubmitButton = styled.button`
   background-color: #161921;
   border-radius: 4px;
   grid-column-start: span 2;
+  border: none;
+  outline: none;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+
+  :hover {
+    background-color: #334366;
+  }
+
+  :active {
+    background-color: #2d50b3;
+  }
 `;
