@@ -14,5 +14,6 @@ export const HeroContent = styled.div`
     padding: 40px 0;
     margin: 0;
     grid-column-start: span 12;
+    color: #161921;
   }
 `;
