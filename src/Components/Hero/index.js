@@ -1,6 +1,6 @@
 import React from "react";
 
-import image from "../../data/images/jeshoots-com-eCktzGjC-iU-unsplash.jpg";
+import image from "../../data/images/Hero.jpg";
 
 import { HeroWrap } from "../../Elements/HeroWrap/";
 import { HeroText } from "../../Elements/HeroText/";
