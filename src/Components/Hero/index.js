@@ -22,6 +22,7 @@ class Hero extends React.Component {
               campaigns and related news, sign up!
             </h2>
             <SignUpItem
+              name="email"
               placeholder="Enter your email"
               type="email"
               buttonText="Sign up"
