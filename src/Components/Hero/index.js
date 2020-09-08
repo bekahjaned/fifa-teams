@@ -24,7 +24,6 @@ class Hero extends React.Component {
             <SignUpItem
               name="email"
               placeholder="Enter your email"
-              type="email"
               buttonText="Sign up"
             />
             <p className="email-intent">

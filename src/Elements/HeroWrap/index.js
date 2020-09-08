@@ -11,6 +11,5 @@ export const HeroWrap = styled.div`
   ${media.desktop} {
     margin: 0 auto;
     background-color: #7b96e6;
-    height: 597px;
   }
 `;

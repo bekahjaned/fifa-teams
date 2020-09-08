@@ -48,6 +48,8 @@ export const HeroText = styled.div`
 
     .email-intent {
       font-size: 14px;
+      padding-bottom: 16px;
+      margin: 0;
     }
   }
 `;
