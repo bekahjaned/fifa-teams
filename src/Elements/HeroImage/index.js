@@ -5,7 +5,7 @@ const media = { desktop: "@media(min-width: 1000px)" };
 export const HeroImage = styled.img`
   display: block;
   width: 100%;
-  padding-bottom: 16px;
+  padding-bottom: 40px;
 
   ${media.desktop} {
     height: 437px;

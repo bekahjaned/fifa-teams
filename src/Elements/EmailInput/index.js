@@ -35,8 +35,7 @@ export const EmailInput = styled.div`
     color: #e6e6e6;
     background-color: #c4323e;
     border-radius: 0 0 4px 4px;
-    padding: 4px 8px;
-    
+    padding: 4px 0 4px 8px;
   }
 }
 

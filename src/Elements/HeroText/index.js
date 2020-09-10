@@ -10,7 +10,7 @@ export const HeroText = styled.div`
     font-weight: 700;
     line-height: 41px;
     margin: 0;
-    padding: 40px 0;
+    padding-bottom: 16px;
   }
 
   .description {
@@ -23,19 +23,22 @@ export const HeroText = styled.div`
 
   .email-intent {
     font-size: 12px;
+    margin: 0;
+    padding-bottom: 20px;
   }
 
   ${media.desktop} {
     grid-column-start: 1;
     grid-column-end: 7;
     color: #161921;
+    margin: 0;
 
     .title {
       font-size: 50px;
       font-weight: 700;
       line-height: 60px;
       margin: 0;
-      padding: 40px 0;
+      padding-bottom: 16px;
     }
 
     .description {

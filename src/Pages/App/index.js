@@ -13,6 +13,10 @@ function App() {
       <Hero />
       <Main />
       <Footer>
+        <p>
+          If you like this site and its contents, please support us by buying us
+          a coffee. This way we can keep improving this page!
+        </p>
         <a
           className="bmc-button"
           href="https://www.buymeacoffee.com/mannyandrebekah"
