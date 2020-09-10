@@ -2,9 +2,17 @@ import styled from "styled-components";
 
 export const Footer = styled.div`
   text-align: center;
-  height: 55px;
   background-color: #161921;
-  padding: 20px 0;
+  padding-bottom: 60px;
+
+  p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 25px;
+    color: #e6e6e6;
+    margin: 0 0 0 16px;
+    padding-bottom: 40px;
+  }
 
   .bmc-button {
     padding: 7px 15px 7px 10px;
