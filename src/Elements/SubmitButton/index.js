@@ -17,6 +17,10 @@ export const SubmitButton = styled.button`
   height: 56px;
   margin-top: 8px;
 
+  :focus {
+    background-color: #2d50b3;
+  }
+
   :active {
     background-color: #2d50b3;
   }
@@ -38,6 +42,10 @@ export const SubmitButton = styled.button`
 
     :hover {
       background-color: #334366;
+    }
+
+    :focus {
+      background-color: #161921;
     }
 
     :active {

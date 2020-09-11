@@ -17,6 +17,7 @@ export const HeroContent = styled.div`
   ${media.desktop} {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    align-items: center;
     grid-gap: 20px;
     grid-row-gap: 0;
     max-width: 1200px;
