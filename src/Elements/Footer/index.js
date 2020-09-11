@@ -61,8 +61,8 @@ export const Footer = styled.div`
       grid-row-gap: 0;
       max-width: 1200px;
       text-align: left;
-      font-size: 20px;
-      line-height: 25px;
+      font-size: 25px;
+      line-height: 35px;
       color: #e6e6e6;
       padding-bottom: 40px;
       margin: 0 auto;
