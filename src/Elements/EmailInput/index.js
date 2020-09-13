@@ -5,7 +5,8 @@ const media = { desktop: "@media(min-width: 1000px)" };
 export const EmailInput = styled.div`
   display: flex;
   flex-direction: column;
-  grid-column-start: span 4;
+  margin-bottom: 10px;
+  
 
   input.error {
     border: 2px solid #c4323e;

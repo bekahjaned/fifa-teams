@@ -1,8 +1,4 @@
 import React from "react";
-import emailjs from "emailjs-com";
-
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.min.css";
 
 import { SignUpWrapper } from "../../Elements/SignUpWrapper/";
 import { EmailInput } from "../../Elements/EmailInput/";
@@ -15,7 +11,6 @@ class SignUpItem extends React.Component {
     this.state = {
       email: "",
       emailError: "",
-      errorClass: "no-error",
     };
   }
 
@@ -25,74 +20,38 @@ class SignUpItem extends React.Component {
     });
   };
 
-  toastifySuccess = () => {
-    toast("Thanks for signing up!", {
-      position: "bottom-right",
-      autoClose: 5000,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: false,
-    });
-  };
-
-  validate = () => {
-    let emailError = "";
-    if (!this.state.email.includes("@")) {
-      emailError = "Please enter a valid email";
-    }
-
-    if (emailError) {
-      this.setState({ emailError, errorClass: "error" });
-      return false;
-    }
-    return true;
-  };
-
-  sendEmail = (e) => {
-    e.preventDefault();
-    const isValid = this.validate();
-    if (isValid) {
-      console.log(this.state);
-      emailjs
-        .sendForm(
-          "manny_bekah_make_stuff",
-          "template_FC9d5ib4",
-          e.target,
-          "user_uFBt7OJSbpoxTLb0kocyH"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-      this.setState({ email: "", emailError: "" });
-      this.toastifySuccess();
-    }
-  };
-
   render() {
     return (
       <div>
-        <SignUpWrapper onSubmit={this.sendEmail}>
+        <SignUpWrapper
+          action="https://gmail.us2.list-manage.com/subscribe/post"
+          method="POST"
+        >
+          <input type="hidden" name="u" value="8140336a6f0652cf619034ca4" />
+          <input type="hidden" name="id" value="be50313f9f" />
           <EmailInput>
             <input
+              type="email"
+              autoCapitalize="off"
+              autoCorrect="off"
+              name="MERGE0"
+              id="MERGE0"
               className={this.state.errorClass}
-              name={this.props.name}
               placeholder={this.props.placeholder}
               value={this.state.email}
               onChange={this.handleChange}
             />
-            {this.state.emailError ? (
-              <span>{this.state.emailError}</span>
-            ) : null}
           </EmailInput>
-          <SubmitButton>{this.props.buttonText}</SubmitButton>
+          <SubmitButton type="submit" name="submit" value="Subscribe">
+            {this.props.buttonText}
+          </SubmitButton>
+          <input
+            type="hidden"
+            name="ht"
+            value="682e7badc6d64f6020a5009ce391fa61a3236d04:MTYwMDAzNDg5Ni41MjAz"
+          />
+          <input type="hidden" name="mc_signupsource" value="hosted" />
         </SignUpWrapper>
-        <ToastContainer />
       </div>
     );
   }
