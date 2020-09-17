@@ -11,6 +11,17 @@ import TeamCard from "../TeamCard/";
 function Main() {
   const [teams, setTeams] = useState(theTeams);
 
+  const openTeams = (index) => {
+    setTeams(
+      teams.map((team, i) => {
+        if (i === index) {
+          team.open = !team.open;
+        }
+        return team;
+      })
+    );
+  };
+
   return (
     <MainWrap>
       <MainContent>
@@ -19,10 +30,11 @@ function Main() {
           If you would like to submit any team ideas, contact u/StillGrowingUp
           on Reddit.
         </p>
-        <CardGrid>
+        <CardGrid className="teams">
           {teams.map((team, i) => (
             <TeamCard
               index={i}
+              openTeams={openTeams}
               name={team.name}
               league={team.league}
               image={team.image}

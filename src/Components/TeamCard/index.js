@@ -12,11 +12,14 @@ function TeamCard(props) {
     <CardWrap
       className={"team " + (props.open ? "open" : "")}
       key={props.index}
+      onClick={() => props.openTeam(props.index)}
     >
       <div className="show">
+        {/* faw-question */}
         <Team name={props.name} league={props.league} image={props.image} />
       </div>
       <div className="collapse">
+        {/* faq-answer */}
         <TeamBackground background={props.background} />
         <TeamGuidelines guidelines={props.guidelines} />
         <TeamObjectives objectives={props.objectives} />
