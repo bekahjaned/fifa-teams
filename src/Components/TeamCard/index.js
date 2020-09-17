@@ -7,35 +7,21 @@ import TeamBackground from "../TeamBackground/";
 import TeamGuidelines from "../TeamGuidelines/";
 import TeamObjectives from "../TeamObjectives/";
 
-// function TeamCard ({team, index, openTeam}) {
-//    const { name, league, image, background, guidelines, objectives } = team;
-//    return (
-//      <CardWrap className={"team " + (team.open ? "open" : "")} key={index} onClick={() => openTeam(index)}>
-//
-//      </CardWrap>
-//    )
-// }
-
-class TeamCard extends React.Component {
-  render() {
-    const {
-      name,
-      league,
-      image,
-      background,
-      guidelines,
-      objectives,
-    } = this.props;
-
-    return (
-      <CardWrap>
-        <Team name={name} league={league} image={image} />
-        <TeamBackground background={background} />
-        <TeamGuidelines guidelines={guidelines} />
-        <TeamObjectives objectives={objectives} />
-      </CardWrap>
-    );
-  }
+function TeamCard(props) {
+  return (
+    <CardWrap
+      className={"team " + (props.open ? "open" : "")}
+      key={props.index}
+    >
+      <div className="show">
+        <Team name={props.name} league={props.league} image={props.image} />
+      </div>
+      <div className="collapse">
+        <TeamBackground background={props.background} />
+        <TeamGuidelines guidelines={props.guidelines} />
+        <TeamObjectives objectives={props.objectives} />
+      </div>
+    </CardWrap>
+  );
 }
-
 export default TeamCard;
