@@ -15,7 +15,7 @@
       "Find a home-grown Dutch striker that will bag at least 20 goals per season.",
       "Maintain financial fairplay (spend as much as you sell)."
     ],
-    "open": true
+    "open": false
   },
   {
     "name": "Juventus F.C.",
@@ -34,7 +34,7 @@
       "Re-build the team by signing players to replace the older ones (Chiellini, etc).",
       "Maintain financial fairplay (spend as much as you sell)."
     ],
-    "open": true
+    "open": false
   },
   {
     "name": "Cadiz C.F.",

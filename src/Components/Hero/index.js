@@ -1,6 +1,7 @@
 import React from "react";
 
 import image from "../../data/images/Hero.jpg";
+import logo from "../../data/images/CM_Logo.png";
 
 import { HeroWrap } from "../../Elements/HeroWrap/";
 import { HeroText } from "../../Elements/HeroText/";
@@ -14,9 +15,11 @@ class Hero extends React.Component {
     return (
       <HeroWrap>
         <HeroContent>
-          <h2 className="name">CM Campaigns</h2>
+          <img className="logo" src={logo} alt="logo" />
           <HeroText>
-            <h1 className="title">Ideas to elevate your Career Mode journey</h1>
+            <h1 className="title">
+              Ideas to elevate your <span>Career Mode</span> journey
+            </h1>
             <h2 className="description">
               If you'd like to receive new ideas to enhance your Career Mode
               campaigns and related news, sign up!
@@ -27,9 +30,8 @@ class Hero extends React.Component {
               buttonText="Sign up"
             />
             <p className="email-intent">
-              I will only use your email to share news about updates to this
-              website and new ideas to improve your Career Mode campaigns. No
-              spam will be sent.
+              No spam will be sent. Only news and updates about this site and
+              new ideas to improve your Career Mode campaigns will be sent.
             </p>
           </HeroText>
           <HeroImage src={image} alt="soccer" />

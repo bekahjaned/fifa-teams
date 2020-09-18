@@ -10,7 +10,7 @@ export const MainContent = styled.div`
     font-size: 36px;
     font-weight: 700;
     line-height: 41px;
-    color: #ffcc00;
+    color: #f2f2f2;
     padding: 60px 0 8px 0;
     margin: 0;
   }
@@ -18,9 +18,14 @@ export const MainContent = styled.div`
   .main-description {
     font-size: 20px;
     line-height: 25px;
-    color: #e6e6e6;
+    color: #f2f2f2;
     padding-bottom: 32px;
     margin: 0;
+
+    a {
+      color: #04f5ff;
+      font-weight: 700;
+    }
   }
 
   ${media.desktop} {
@@ -28,19 +33,24 @@ export const MainContent = styled.div`
     margin: 0 auto;
 
     .main-title {
+      color: #f2f2f2;
       font-size: 50px;
       font-weight: 700;
-      color: #ffcc00;
       padding: 60px 0 8px 0;
       margin: 0;
     }
 
     .main-description {
+      color: #f2f2f2;
       font-size: 25px;
       line-height: 35px;
-      color: #e6e6e6;
       padding-bottom: 32px;
       margin: 0;
+
+      a {
+        color: #04f5ff;
+        font-weight: 700;
+      }
     }
   }
 `;

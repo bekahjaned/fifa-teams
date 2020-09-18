@@ -7,9 +7,9 @@ export const HeroContent = styled.div`
   margin: 0;
   max-width: 414px;
 
-  .name {
-    font-size: 20px;
-    font-weight: 700;
+  .logo {
+    width: 125px;
+    height: 40px;
     padding: 16px 0 40px 0;
     margin: 0 0 0 16px;
   }
@@ -24,13 +24,12 @@ export const HeroContent = styled.div`
     padding-bottom: 40px;
     margin: 0 auto;
 
-    .name {
-      font-size: 25px;
-      font-weight: 700;
+    .logo {
+      width: 125px;
+      height: 40px;
       padding: 40px 0;
       margin: 0;
       grid-column-start: span 12;
-      color: #161921;
     }
   }
 `;
