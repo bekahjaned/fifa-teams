@@ -14,7 +14,8 @@
       "Build a team with enough local depth to fight in the Champions League.",
       "Find a home-grown Dutch striker that will bag at least 20 goals per season.",
       "Maintain financial fairplay (spend as much as you sell)."
-    ]
+    ],
+    "open": true
   },
   {
     "name": "Juventus F.C.",
@@ -32,7 +33,8 @@
       "Scout and sign a young player with the potential to be the next world star.",
       "Re-build the team by signing players to replace the older ones (Chiellini, etc).",
       "Maintain financial fairplay (spend as much as you sell)."
-    ]
+    ],
+    "open": false
   },
   {
     "name": "Cadiz C.F.",
@@ -49,7 +51,8 @@
       "Scout and sign an older and known Spanish striker to replace Alvaro Negredo.",
       "Turn at least one loanee into a permanent signing per season.",
       "Maintain financial fairplay (spend as much as you sell)."
-    ]
+    ],
+    "open": false
   },
   {
     "name": "Utrecht F.C.",
@@ -68,6 +71,7 @@
       "Become a Europa League regular (at least 2 seasons) and then aim for the Champions League. After 5-6 seasons, aim to win the Dutch double.",
       "Aim to win home and away matches vs Ajax to show your ambition.",
       "Maintain financial fairplay (spend as much as you sell)."
-    ]
+    ],
+    "open": false
   }
 ]

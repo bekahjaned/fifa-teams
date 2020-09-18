@@ -1,0 +1,51 @@
+.teams {
+  cursor: pointer;
+}
+
+.teams .team .show {
+  display: flex;
+  justify-content: space-between;
+  max-height: fit-content;
+  background-color: #282b32;
+  padding: 16px 16px 0 16px;
+  border-radius: 8px;
+}
+
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 12px;
+  background-color: teal;
+}
+
+.teams .team .icon {
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.teams .team .collapse {
+  max-height: 0;
+  transform: scaleY(0);
+}
+
+.teams .team.open .icon {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.teams .team.open .show {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.teams .team.open .collapse {
+  background-color: #282b32;
+  padding: 16px 16px 0 16px;
+  border-radius: 0px 0px 8px 8px;
+  max-height: 100%;
+  transition: transform 0.5s ease;
+  transform: scaleY(1);
+  transform-origin: top;
+}

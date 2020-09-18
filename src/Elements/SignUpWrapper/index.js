@@ -12,5 +12,6 @@ export const SignUpWrapper = styled.form`
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 20px;
     padding: 0;
+    height: 87px;
   }
 `;
