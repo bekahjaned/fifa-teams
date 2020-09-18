@@ -34,7 +34,7 @@
       "Re-build the team by signing players to replace the older ones (Chiellini, etc).",
       "Maintain financial fairplay (spend as much as you sell)."
     ],
-    "open": false
+    "open": true
   },
   {
     "name": "Cadiz C.F.",
@@ -71,6 +71,101 @@
       "Become a Europa League regular (at least 2 seasons) and then aim for the Champions League. After 5-6 seasons, aim to win the Dutch double.",
       "Aim to win home and away matches vs Ajax to show your ambition.",
       "Maintain financial fairplay (spend as much as you sell)."
+    ],
+    "open": false
+  },
+  {
+    "name": "Exeter City",
+    "image": "Exeter City",
+    "league": "EFL League 2",
+    "background": "Exeter have been playing in the lower leagues for many years now, and just missed promotion to League 1 in the Covid-shortened 19-20 season.  Arguably, Exeter are most famous as a selling team with a great academy, having discovered and trained players like Ethan Ampadu, Matt Grimes, and Ollie Watkins.",
+    "guidelines": [
+      "Spend almost no money in transfer market in Leagues 2 and 1. For example, Exeter are unlikely to pay transfer fees in 2020-21, and explicitly stated they would need to use the free-agent market. Exeter's record fee paid (according to transfermarkt) is 275,000 U.S. Dollars. Adjusted for inflation, that is around 500,000 US dollars in 2020. You should not significantly exceed that.",
+      "Fan-owned Exeter relies significantly on match-day revenue and player sales. They generally must make a sale before they can buy.  When in doubt, save money; use free transfers for two seasons, and target free agents who are at or just below squad average or position average.",
+      "Prioritize English and Irish players, although you could attempt to lure some from Scotland.",
+      "Keep only ONE player not from UK/Northern Ireland in squad.",
+      "Loan in up to three players per season.",
+      "Develop, play, and sell, youth academy players. The 21 playing squad should feature a significant number of academy graduates.",
+      "Sell youth academy players earlier, for lower values, and attempt to get significant sell-on clause. For example, Ollie Watkins was sold with a 15% sell-on clause to Brentford. Exeter will earn 4 million on his move from Brentford to Aston Villa.",
+      "The maximum youth academy sale should be around 3-4 million.",
+      "Play 5-3-2 or 4-3-3 holding.",
+      "Allow 50% of expiring contracts to run out and release on free."
+    ],
+    "objectives": [
+      "Achieve promotion to League 1 in the 20-21 season.",
+      "Achieve promotion to the Championship by 2023-24 season, and stabilize the team as a Championship side.",
+      "Make a profit via player sales and upgrade the squad by buying a striker and CB.",
+      "Maintain financial fairplay (spend as much as you sell)."
+    ],
+    "open": false
+  },
+  {
+    "name": "Blackpool",
+    "image": "Blackpool",
+    "league": "EFL League 1",
+    "background": "Premier League darlings in 2010 who had 30 points by Christmas and then slid to last place after a disastrous winter and Spring. 'Pool plummeted to League 2 before rebounding.  The club's owners were roundly disliked and criticized through 2019-- when the club was finally sold to new owners.  The new management looks to make a splash, with NINE signings already before the 20-21 kickoff.  Can you rebuild Blackpool and reach the Prem--this time, to stay?",
+    "guidelines": [
+      "Max transfer fee 1.65 million. Do not break until you reach the Championship.",
+      "Try to sell players mainly to Premier League and top Championship teams.",
+      "Most transfers come from England, Scotland, Ireland; you may add up to 3 international players in League 1; up to 4 in Championship, up to 5 in the Prem until you reach European competitions.",
+      "Use loan agreements in League 1 and Championship to improve depth.",
+      "Transfers should prioritize experienced players age 23+ who have proven their ability at your level of competition; or who are older and are moving down a level in competition as they age.",
+      "2 or more players in starting XI should be 28 or older.",
+      "Blackpool's youth academy has not been terribly notable recently, so allow a max of 3*/3* scouting, and a max of two scouts.",
+      "Favor the 4-3-3 formations.",
+      "Transfer or loan in a player from RANGERS every year, especially players who really won't see time for Rangers. (4 guys in last two years from the Scottish side!)"
+    ],
+    "objectives": [
+      "Achieve promotion to the Championship in 20-21.",
+      "Achieve promotion to Prem by 23-24 season.",
+      "Stabilize the team as a consistent Premier League competitor. There is no expectation of European competition but a reasonable target might be by 27-28.",
+      "Maintain a profit via promotion, prize money, and player sales.",
+      "Maintain financial fairplay (spend as much as you sell)."
+    ],
+    "open": false
+  },
+  {
+    "name": "F. C. Internazionale Milano",
+    "image": "Inter Milan",
+    "league": "Serie A",
+    "background": "Commonly referred to as Inter, it is the only Italian club never to have been relegated from the top flight of Italian football. Inter hasn't won a title in the last decade. The board have changed managers 11 times since, but none were able to bring a title home for the Nerazurri. From 2006 to 2010, the club won five successive league titles and have won the Champions League three times: two back-to-back in 1964 and 1965 and then another in 2010. Their latest win completed an unprecedented Italian seasonal treble, with Inter winning the Coppa Italia and the Scudetto the same year. Currently, they are looking to bring back their domestic and European success as they did back in 2010.",
+    "guidelines": [
+      "Play the 3-5-2 formation. Occasionally try 3-4-1-2 to include an AMF, like Eriksen.",
+      "Use the youth academy to generate talent and then sell them to other mid-table Italian clubs.",
+      "Prioritize buying Italian, South-American, and East-European players.",
+      "To improve realism, only have a max of 4 non-eu players (withouth an EU-pasport) in the club."
+    ],
+    "objectives": [
+      "Aim to win the Serie A title or at least finish in a Champions League spot.",
+      "Aim to reach at least the round of 16 in the Champions League.",
+      "Find a suitable replacement for Handanovic (GK).",
+      "Try signing players in their last year of their contract or on a free.",
+      "Sign experienced players for their last hoorah e.g. Vidal, Modric, Dezeko, Giroud.",
+      "Maintain financial fair-play (spend as much as you sell)."
+    ],
+    "open": false
+  },
+  {
+    "name": "Athletic Club Bilbao",
+    "image": "Bilbao",
+    "league": "La Liga",
+    "background": "Athletic Club or Athletic Bilbao are an established upper mid-table club in La Liga. They are the 3rd most successful club in Spain having won the La Liga on 8 occasions and the Spanish cup on 23 occasions. Athletic is operated by the club members themselves, rather than a corporation, which adds an extra sense of closeness with their fan base. Bilbao are well known for their policy of only using and promoting Basque players in the squad. Recent immigration from West Africa, North Africa and Romania has meant that the team is made of of more than just ethnic Basques and Spaniards, but only to a small extent. While the new club president has promised to expand scouting in South America to recruit teenagers with Basque heritage and make them eligible by training them at Lezama, nothing has come of this promise so far. They are also a constant provider of players to the Spanish national team, but this is overshadowed by the lack of titles in the last 35 years, with the exception of a Supercopa win in 2015.",
+    "guidelines": [
+      "Athletic's official policy is signing professional players native to or trained in football in the greater Basque Country. Some eligible players include: Ruben Pardo, Jon Bautista, Unai Bustinza, Sabin Merino, Javi Martinez, Azpilicueta, Eraso, Odriozola, Mikel Merino, Zubeldia, Ander Herrera, Elustondo, Raul Fernandez, Zaldua, Illarramendi, among others. If you become a CL regular, siginings such as Kepa, Laporte, Oyarzabal, and Griezmann are acceptable.",
+      "Put buyout clauses in all contracts and do not offer new contracts when someone gets bought out.",
+      "Athletic traditionally don't negotiate player exits. Either the buying team pays the buyout clause, or the player will have to wait until his contract ends. Disgruntled or unwanted players are often released from their contracts or sent out on loan until their contract expires. (This policy may be too difficult to follow, since there is not ability to move young players between first team and youth team, and loaning players out can be difficult)",
+      "Teams in the Basque region where you can scout from are: Alaves, Osasuna, Eibar, and Real Sociedad.",
+      "Real Sociedad is Athletic's main rival. They would never willingly sell a player to Athletic and their players often have Anti-Athletic Clauses in their contract that increases their buyout clause. If you decide to buy players from them, pay 20% above asking price.",
+      "Youth academy scouting should be mainly in Spain (unless otherwise stated). Look for the following Basque names: Ander, Andoni, Gorka, Gaizka, Iker, Hodei, Jon, Iñigo, Iñaki, Xabi, Einar, Unai, Ekhi, Aitor, Asier, Julen, Gaizka, Eneko, Aritz, Joseba, Kepa, Jokin, Mikel (Spain and Venezuela), Igor (Romania). Look for the following Basque last names: Altube, Oleaga, Olabe del Arco, Aguirre, Aguirregabiria, Merino Zuloaga, Eguskiza, Bilbao Arteta, Garmendia (Spain and Argentina), Unamuno, Imaz, Muñiz, Arnáiz, Lasure, Larrea Gambara, Guridi Aldalur, Irigoien, Areta (Chile), Zuniga (Chile), Echave (Chile), Echeverria (Chile), Ibarra (Ecuador), Arrieta (Colombia), Loaiza (Colombia), Elizalde (Uruguay), Zabala (Uruguay), Goitia (Argentina), Gorriarán (Uruguay), Unsain (Argentina), Borgueray (Ecuador), Garay, and Otamendi.",
+      "Athletic's formation is 4-2-3-1 and they prefer hitting teams on the counter-attack, rather than maintaining possesion. They also keep the pitch wide by passing the ball to the wingers, which facilitates a quick counter-attack."
+    ],
+    "objectives": [
+      "Aim for a top 6 finish securing automatic qualification to the Champions League.",
+      "Reach the final of the Spanish Cup.",
+      "Aim to develop the best youth system in Spain.",
+      "Focus on finding a new homegrown striker to replace Aritz Aduriz.",
+      "If CL teams come asking for your players, you must sell them for a high fee.",
+      "Maintain financial fair-play (spend as much as you sell)."
     ],
     "open": false
   }
