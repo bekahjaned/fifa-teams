@@ -1,7 +1,14 @@
+.teams {
+  cursor: pointer;
+}
+
 .teams .team .show {
   display: flex;
   justify-content: space-between;
-  transition: all 0.4s ease;
+  max-height: fit-content;
+  background-color: #282b32;
+  padding: 16px 16px 0 16px;
+  border-radius: 8px;
 }
 
 .icon-wrap {
@@ -16,21 +23,27 @@
 
 .teams .team .icon {
   transform: rotate(90deg);
-  transition: all 0.4s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .teams .team .collapse {
   opacity: 0;
   max-height: 0;
   overflow-y: hidden;
-  transition: all 0.4s ease-out;
 }
 
 .teams .team.open .icon {
   transform: rotate(0deg);
 }
 
+.teams .team.open .show {
+  border-radius: 8px 8px 0px 0px;
+}
+
 .teams .team.open .collapse {
+  background-color: #282b32;
+  padding: 16px 16px 0 16px;
+  border-radius: 0px 0px 8px 8px;
   max-height: 100%;
   opacity: 1;
 }
