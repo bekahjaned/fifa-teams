@@ -1,0 +1,27 @@
+.teams .team .show {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.4s ease;
+}
+
+.teams .team .icon {
+  margin: 5px;
+  transform: rotate(90deg);
+  transition: all 0.4s ease-out;
+}
+
+.teams .team .collapse {
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.4s ease-out;
+}
+
+.teams .team.open .icon::after {
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.teams .team.open .collapse {
+  max-height: 100%;
+  opacity: 1;
+}

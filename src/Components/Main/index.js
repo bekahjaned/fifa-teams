@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../index.css";
 
 import theTeams from "../../data/teams.json";
 
@@ -33,14 +34,9 @@ function Main() {
         <CardGrid className="teams">
           {teams.map((team, i) => (
             <TeamCard
+              team={team}
               index={i}
               openTeams={openTeams}
-              name={team.name}
-              league={team.league}
-              image={team.image}
-              background={team.background}
-              guidelines={team.guidelines}
-              objectives={team.objectives}
               key={team.name}
             />
           ))}
