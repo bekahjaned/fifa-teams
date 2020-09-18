@@ -5,7 +5,7 @@ export const SubmitButton = styled.button`
   font-weight: 700;
   padding: 18px 0;
   color: #e6e6e6;
-  background-color: #161921;
+  background-color: #cc0048;
   border-radius: 4px;
   grid-column-start: span 2;
   border: none;

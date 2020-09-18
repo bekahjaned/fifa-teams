@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   max-height: fit-content;
-  background-color: #282b32;
+  background-color: #3b003c;
   padding: 16px 16px 0 16px;
   border-radius: 8px;
 }
@@ -15,15 +15,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 22px;
-  height: 22px;
-  border-radius: 12px;
-  background-color: teal;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: rgba(13, 13, 13, 0.3);
 }
 
 .teams .team .icon {
+  height: 20px;
+  width: 13px;
   transform: rotate(90deg);
   transition: transform 0.2s ease;
+  color: #eaff04;
 }
 
 .teams .team .collapse {
@@ -41,7 +44,7 @@
 }
 
 .teams .team.open .collapse {
-  background-color: #282b32;
+  background-color: #3b003c;
   padding: 16px 16px 0 16px;
   border-radius: 0px 0px 8px 8px;
   max-height: 100%;

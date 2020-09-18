@@ -10,16 +10,17 @@ export const EmailInput = styled.div`
   
 
   input {
+    color: #3b003c;
     font-size: 16px;
-    color: #666e80;
     padding-left: 18px;
     height: 56px;
-    border: 1px solid #161921;
+    border: 1px solid #cc0048;
     border-radius: 4px;
     outline: none;
 
     :focus {
-      border: 2px solid #161921;
+      color: #3b003c;
+      border: 2px solid #cc0048;
     }
   }
 
@@ -32,8 +33,8 @@ export const EmailInput = styled.div`
     padding-bottom: 16px;
 
     input {
+      color: #3b003c;
       font-size: 16px;
-      color: #666e80;
       padding-left: 18px;
       border-radius: 4px;
       outline: none;
@@ -41,7 +42,12 @@ export const EmailInput = styled.div`
       margin: 0;
 
       :focus {
-        border: 2px solid #161921;
+        color: #3b003c;
+        border: 2px solid #cc0048;
+      }
+
+      ::placeholder {
+        color: rgba(56, 0, 60, 0.5);
       }
     }
 

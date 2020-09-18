@@ -4,6 +4,7 @@ const media = { desktop: "@media(min-width: 1000px)" };
 
 export const HeroText = styled.div`
   margin: 0 16px;
+  color: #f2f2f2;
 
   .title {
     font-size: 36px;
@@ -11,6 +12,10 @@ export const HeroText = styled.div`
     line-height: 41px;
     margin: 0;
     padding-bottom: 16px;
+
+    span {
+      color: #e90052;
+    }
   }
 
   .description {
@@ -30,7 +35,7 @@ export const HeroText = styled.div`
   ${media.desktop} {
     grid-column-start: 1;
     grid-column-end: 7;
-    color: #161921;
+    color: #f2f2f2;
     margin: 0;
 
     .title {
@@ -39,6 +44,10 @@ export const HeroText = styled.div`
       line-height: 60px;
       margin: 0;
       padding-bottom: 16px;
+
+      span {
+        color: #e90052;
+      }
     }
 
     .description {

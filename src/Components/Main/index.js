@@ -28,8 +28,10 @@ function Main() {
       <MainContent>
         <h1 className="main-title">Team Guidelines</h1>
         <p className="main-description">
-          If you would like to submit any team ideas, contact u/StillGrowingUp
-          on Reddit.
+          If you would like to submit any team ideas, please use the following{" "}
+          <a href="https://docs.google.com/spreadsheets/d/1qJjRlqHfvOOWYTpBEqnaO5epkNgDe59Nsc6w35EOaFc/edit#gid=0">
+            Google Sheet
+          </a>
         </p>
         <CardGrid className="teams">
           {teams.map((team, i) => (
