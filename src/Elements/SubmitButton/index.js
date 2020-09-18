@@ -16,10 +16,10 @@ export const SubmitButton = styled.button`
   margin: 0;
 
   :hover {
-    background-color: #334366;
+    background-color: #830039;
   }
 
   :active {
-    background-color: #2d50b3;
+    background-color: #650023;
   }
 `;

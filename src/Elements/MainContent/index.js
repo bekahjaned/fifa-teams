@@ -22,9 +22,11 @@ export const MainContent = styled.div`
     padding-bottom: 32px;
     margin: 0;
 
-    a {
+    span {
       color: #04f5ff;
       font-weight: 700;
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 
@@ -47,9 +49,11 @@ export const MainContent = styled.div`
       padding-bottom: 32px;
       margin: 0;
 
-      a {
+      span {
         color: #04f5ff;
         font-weight: 700;
+        text-decoration: underline;
+        cursor: pointer;
       }
     }
   }
