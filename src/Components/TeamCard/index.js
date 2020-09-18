@@ -21,12 +21,12 @@ function TeamCard(props) {
       onClick={() => openTeams(index)}
     >
       <div className="show">
-        {/* faw-question */}
         <Team name={team.name} league={team.league} image={team.image} />
-        <FontAwesomeIcon className="icon" icon={faChevronDown} />
+        <div className="icon-wrap">
+          <FontAwesomeIcon className="icon" icon={faChevronDown} />
+        </div>
       </div>
       <div className="collapse">
-        {/* faq-answer */}
         <TeamBackground background={team.background} />
         <TeamGuidelines guidelines={team.guidelines} />
         <TeamObjectives objectives={team.objectives} />

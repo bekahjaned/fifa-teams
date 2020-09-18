@@ -4,8 +4,17 @@
   transition: all 0.4s ease;
 }
 
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 12px;
+  background-color: teal;
+}
+
 .teams .team .icon {
-  margin: 5px;
   transform: rotate(90deg);
   transition: all 0.4s ease-out;
 }
@@ -17,8 +26,8 @@
   transition: all 0.4s ease-out;
 }
 
-.teams .team.open .icon::after {
-  transform: translateY(-50%) rotate(-90deg);
+.teams .team.open .icon {
+  transform: rotate(0deg);
 }
 
 .teams .team.open .collapse {
