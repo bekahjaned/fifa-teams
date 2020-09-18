@@ -4,7 +4,7 @@ const media = { desktop: "@media(min-width: 1000px)" };
 
 export const Footer = styled.div`
   text-align: center;
-  background-color: #161921;
+  background-color: #0d0d0d;
   padding-bottom: 60px;
 
   p {
@@ -52,7 +52,7 @@ export const Footer = styled.div`
 
   ${media.desktop} {
     text-align: center;
-    background-color: #161921;
+    background-color: #0d0d0d;
     padding-bottom: 60px;
 
     p {

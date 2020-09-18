@@ -20,6 +20,8 @@ function App() {
         <a
           className="bmc-button"
           href="https://www.buymeacoffee.com/mannyandrebekah"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
