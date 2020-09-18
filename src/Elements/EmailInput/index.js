@@ -8,15 +8,6 @@ export const EmailInput = styled.div`
   margin-bottom: 10px;
   
 
-  input.error {
-    border: 2px solid #c4323e;
-    border-radius: 4px 4px 0 0;
-  }
-
-  input.no-error {
-    border: 1px solid #161921;
-  }
-
   input {
     font-size: 16px;
     color: #666e80;
@@ -31,13 +22,6 @@ export const EmailInput = styled.div`
     }
   }
 
-  span {
-    font-size: 12px;
-    color: #e6e6e6;
-    background-color: #c4323e;
-    border-radius: 0 0 4px 4px;
-    padding: 4px 0 4px 8px;
-  }
 }
 
   ${media.desktop} {
@@ -45,15 +29,6 @@ export const EmailInput = styled.div`
     flex-direction: column;
     grid-column-start: span 4;
     padding-bottom: 16px;
-
-    input.error {
-        border: 2px solid #c4323e;
-        border-radius: 4px 4px 0 0;
-    }
-
-    input.no-error {
-      border: 1px solid #161921;
-    }
 
     input {
       font-size: 16px;
@@ -69,12 +44,5 @@ export const EmailInput = styled.div`
       }
     }
 
-    span {
-      font-size: 12px;
-      color: #e6e6e6;
-      background-color: #c4323e;
-      border-radius: 0 0 4px 4px;
-      padding: 4px 8px;
-    }
   }
 `;
