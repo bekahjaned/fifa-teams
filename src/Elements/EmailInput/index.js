@@ -6,6 +6,7 @@ export const EmailInput = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  height: 56px;
   
 
   input {
