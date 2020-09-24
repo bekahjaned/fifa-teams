@@ -11,7 +11,7 @@ export const MainContent = styled.div`
     font-weight: 700;
     line-height: 41px;
     color: #f2f2f2;
-    padding: 60px 0 8px 0;
+    padding: 100px 0 8px 0;
     margin: 0;
   }
 
@@ -38,7 +38,7 @@ export const MainContent = styled.div`
       color: #f2f2f2;
       font-size: 50px;
       font-weight: 700;
-      padding: 60px 0 8px 0;
+      padding: 100px 0 8px 0;
       margin: 0;
     }
 
