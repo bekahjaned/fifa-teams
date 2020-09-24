@@ -13,13 +13,8 @@ export const TeamInfo = styled.div`
     margin: 0;
   }
 
-  p {
-    font-size: 14px;
-    margin: 0;
-  }
-
   ul {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
   }
 
@@ -34,13 +29,10 @@ export const TeamInfo = styled.div`
       margin: 0;
     }
 
-    p {
-      font-size: 14px;
-      margin: 0;
     }
 
     ul {
-      font-size: 14px;
+      font-size: 16px;
       margin: 0;
     }
   }
