@@ -14,6 +14,8 @@ export const Footer = styled.div`
     color: #e6e6e6;
     margin: 0 0 0 16px;
     padding-bottom: 40px;
+    max-width: 414px;
+    margin: 0 auto;
   }
 
   .bmc-button {

@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-const media = { desktop: "@media(min-width: 1000px)" };
+const media = {
+  desktop: "@media(min-width: 80%)",
+  mid: "@media(min-width: 50%)",
+};
 
 export const HeroWrap = styled.div`
   display: flex;
@@ -10,8 +13,6 @@ export const HeroWrap = styled.div`
   height: 100%;
 
   ${media.desktop} {
-    margin: 0 auto;
-    background-color: #3b003c;
     height: 591px;
   }
 `;

@@ -4,7 +4,7 @@ const media = { desktop: "@media(min-width: 1000px)" };
 
 export const MainContent = styled.div`
   max-width: 414px;
-  margin: 0 16px;
+  margin: 0 auto;
 
   .main-title {
     font-size: 36px;

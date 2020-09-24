@@ -4,7 +4,7 @@ const media = { desktop: "@media(min-width: 1000px)" };
 
 export const HeroContent = styled.div`
   display: block;
-  margin: 0;
+  margin: 0 auto;
   max-width: 414px;
 
   .logo {
