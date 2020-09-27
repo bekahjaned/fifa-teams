@@ -16,13 +16,13 @@
   justify-content: center;
   align-items: center;
   margin-left: 16px;
-  width: 32px;
+  min-width: 32px;
   height: 32px;
   border-radius: 100%;
   background-color: rgba(13, 13, 13, 0.3);
 }
 
-.teams .team .icon {
+.icon-wrap .icon {
   height: 20px;
   width: 13px;
   transform: rotate(90deg);
@@ -35,7 +35,7 @@
   transform: scaleY(0);
 }
 
-.teams .team.open .icon {
+.team.open .icon {
   transform: rotate(0deg);
   transition: transform 0.5s ease;
 }
@@ -52,4 +52,10 @@
   transition: transform 0.5s ease;
   transform: scaleY(1);
   transform-origin: top;
+}
+
+.icon-wrap,
+.icon:hover {
+  background-color: rgba(13, 13, 13, 0.4);
+  color: #cfa603;
 }
