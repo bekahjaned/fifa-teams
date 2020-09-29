@@ -7,7 +7,7 @@ import { Footer } from "../../Elements/Footer/";
 import Hero from "../../Components/Hero/";
 import Main from "../../Components/Main/";
 
-function App() {
+function Home() {
   return (
     <ContentWrap>
       <Hero />
@@ -34,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
