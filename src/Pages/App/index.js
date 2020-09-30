@@ -13,17 +13,16 @@ function App() {
   const media = { desktop: "@media(min-width: 1000px)" };
 
   const NavWrap = styled.div`
-    margin: 0 auto;
-    max-width: 414px;
+    background-color: #3b003c;
 
     ${media.desktop} {
       position: sticky;
-      max-width: 1200px;
-      margin: 0 auto;
     }
   `;
 
   const Nav = styled.div`
+    margin: 0 auto;
+    max-width: 414px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,12 +35,25 @@ function App() {
     }
 
     ${media.desktop} {
+      max-width: 1200px;
+      margin: 0 auto;
+
       .logo {
         width: 125px;
         height: 40px;
         padding: 40px 0;
         margin: 0;
       }
+    }
+  `;
+
+  const NavLinks = styled.div`
+    padding-bottom: 25px;
+
+    a {
+      margin-right: 10px;
+      color: white;
+      text-decoration: none;
     }
   `;
 
@@ -52,18 +64,20 @@ function App() {
           <Link to="/">
             <img className="logo" src={logo} alt="logo" />
           </Link>
-          <Link to="/teamform">Submit a Team</Link>
-          {/* <Link>Sign Up</Link> */}
+          <NavLinks>
+            <Link to="/team-form">Submit a Team</Link>
+            <Link to="/sign-up">Sign Up</Link>
+          </NavLinks>
         </Nav>
 
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/teamform">
+          <Route path="/team-form">
             <TeamFormPage />
           </Route>
-          {/* <Route>
+          {/* <Route path="/sign-up">
             <SignUpPage />
           </Route> */}
         </Switch>

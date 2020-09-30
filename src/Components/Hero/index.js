@@ -1,7 +1,6 @@
 import React from "react";
 
 import image from "../../data/images/Hero.jpg";
-import logo from "../../data/images/CM_Logo.png";
 
 import { HeroWrap } from "../../Elements/HeroWrap/";
 import { HeroText } from "../../Elements/HeroText/";
@@ -15,7 +14,6 @@ class Hero extends React.Component {
     return (
       <HeroWrap>
         <HeroContent>
-          <img className="logo" src={logo} alt="logo" />
           <HeroText>
             <h1 className="title">
               Ideas to elevate your <span>Career Mode</span> journey
