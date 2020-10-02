@@ -1,16 +1,19 @@
 import React from "react";
 
+import { DropdownLabel } from "../../Elements/DropdownLabel/";
+import { DropdownWrap } from "../../Elements/DropdownWrap/";
+
 function TeamDropdown({ handleTeamChange, teams }) {
   return (
-    <div>
-      <label>
+    <DropdownWrap>
+      <DropdownLabel>
         Team <span>*</span>
-      </label>
-      <select onChange={handleTeamChange}>
+      </DropdownLabel>
+      <select className="medium" onChange={handleTeamChange}>
         <option className="no-display">Select Team</option>
         {teams}
       </select>
-    </div>
+    </DropdownWrap>
   );
 }
 

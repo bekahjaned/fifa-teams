@@ -1,9 +1,12 @@
 import React from "react";
-import "./index.css";
 
 import options from "../../data/options.json";
 
 import Dropdowns from "../../Components/Dropdowns/";
+
+import { FormWrap } from "../../Elements/FormWrap/";
+import { Line } from "../../Elements/Line/";
+import { FormHeader } from "../../Elements/FormHeader/";
 
 class TeamFormPage extends React.Component {
   constructor(props) {
@@ -105,19 +108,16 @@ class TeamFormPage extends React.Component {
 
   render() {
     const { country, league } = this.state.form;
-
     const countries = this.getCountries();
-
     const leagues = this.getLeagues(country);
-
     const teams = this.getTeams(country, league);
 
     return (
-      <div>
-        <div>
+      <FormWrap>
+        <FormHeader>
           <h1>Team Idea Submission Form</h1>
-          <div></div>
-        </div>
+          <Line />
+        </FormHeader>
         <Dropdowns
           handleCountryChange={this.handleCountryChange}
           handleLeagueChange={this.handleLeagueChange}
@@ -126,7 +126,7 @@ class TeamFormPage extends React.Component {
           leagues={leagues}
           teams={teams}
         />
-      </div>
+      </FormWrap>
     );
   }
 }

@@ -1,16 +1,19 @@
 import React from "react";
 
+import { DropdownLabel } from "../../Elements/DropdownLabel/";
+import { DropdownWrap } from "../../Elements/DropdownWrap/";
+
 function CountryDropdown({ handleCountryChange, countries }) {
   return (
-    <div>
-      <label>
+    <DropdownWrap>
+      <DropdownLabel>
         Country <span>*</span>
-      </label>
-      <select onChange={handleCountryChange}>
-        <option className="no-display">Select country</option>
+      </DropdownLabel>
+      <select className="small" onChange={handleCountryChange}>
+        <option className="no-display">Select Country</option>
         {countries}
       </select>
-    </div>
+    </DropdownWrap>
   );
 }
 
