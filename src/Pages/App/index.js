@@ -1,6 +1,5 @@
 import React from "react";
 import "../index.css";
-import styled from "styled-components";
 
 import logo from "../../data/images/CM_Logo.png";
 
@@ -9,54 +8,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "../Home/";
 import TeamFormPage from "../TeamFormPage/";
 
+import { NavWrap } from "../../Elements/NavWrap/";
+import { Nav } from "../../Elements/Nav/";
+import { NavLinks } from "../../Elements/NavLinks";
+
 function App() {
-  const media = { desktop: "@media(min-width: 1000px)" };
-
-  const NavWrap = styled.div`
-    background-color: #3b003c;
-
-    ${media.desktop} {
-      position: sticky;
-    }
-  `;
-
-  const Nav = styled.div`
-    margin: 0 auto;
-    max-width: 414px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .logo {
-      width: 125px;
-      height: 40px;
-      padding: 16px 0 40px 0;
-      margin: 0 0 0 16px;
-    }
-
-    ${media.desktop} {
-      max-width: 1200px;
-      margin: 0 auto;
-
-      .logo {
-        width: 125px;
-        height: 40px;
-        padding: 40px 0;
-        margin: 0;
-      }
-    }
-  `;
-
-  const NavLinks = styled.div`
-    padding-bottom: 25px;
-
-    a {
-      margin-right: 10px;
-      color: white;
-      text-decoration: none;
-    }
-  `;
-
   return (
     <Router>
       <NavWrap>
