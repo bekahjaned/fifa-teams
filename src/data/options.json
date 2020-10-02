@@ -1,0 +1,297 @@
+[
+  {
+    "country": "ARGENTINA",
+    "leagues": [
+      {
+        "name": "LIGA PROFESIONAL DE FÚTBOL",
+        "teams": [
+          "ALDOSIVI",
+          "ARGENTINOS JRS.",
+          "ARSENAL",
+          "ATLÉTICO TUCUMÁN",
+          "BANFIELD",
+          "BOCA JUNIORS",
+          "CENTRAL CÓRDOBA",
+          "COLÓN",
+          "DEFENSA",
+          "ESTUDIANTES",
+          "GIMNASIA",
+          "GODOY CRUZ",
+          "HURACÁN",
+          "INDEPENDIENTE",
+          "LANÚS",
+          "NEWELL'S",
+          "RIVER PLATE",
+          "PATRONATO",
+          "RACING CLUB",
+          "ROSARIO CENTRAL",
+          "SAN LORENZO",
+          "TALLERES",
+          "UNIÓN",
+          "VÉLEZ SARSFIELD"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "AUSTRALIA",
+    "leagues": [
+      {
+        "name": "A-LEAGUE",
+        "teams": [
+          "ADELAIDE UNITED",
+          "BRISBANE ROAR",
+          "CENTRAL COAST",
+          "MACARTHUR FC",
+          "MELBOURNE VICTORY",
+          "MELBOURNE CITY",
+          "NEWCASTLE JETS",
+          "PERTH GLORY",
+          "SYDNEY FC",
+          "WELL. PHOENIX",
+          "WESTERN UNITED",
+          "WS WANDERERS"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "AUSTRIA",
+    "leagues": [
+      {
+        "name": "Ö. BUNDESLIGA",
+        "teams": [
+          "ADMIRA WACKER",
+          "FK AUSTRIA WIEN",
+          "LASK",
+          "RB SALZBURG",
+          "SCR ALTACH",
+          "SK RAPID WIEN",
+          "SK STURM GRAZ",
+          "SKN ST. PÖLTEN",
+          "SV RIED",
+          "TSV HARTBERG",
+          "WOLFSBERGER AC",
+          "WSG TIROL"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "BELGIUM",
+    "leagues": [
+      {
+        "name": "1A PRO LEAGUE",
+        "teams": [
+          "K BEERSCHOT VA",
+          "CERCLE BRUGGE",
+          "CLUB BRUGGE",
+          "EXCEL MOUSCRON",
+          "KAA GENT",
+          "KAS EUPEN",
+          "KRC GENK",
+          "KV KORTRIJK",
+          "KV MECHELEN",
+          "KV OOSTENDE",
+          "OH LEUVEN",
+          "ROYAL ANTWERP FC",
+          "RSC ANDERLECHT",
+          "SINT-TRUIDEN",
+          "SP. CHARLEROI",
+          "STANDARD LIÈGE",
+          "WAASL. BEVEREN",
+          "ZULTE WAREGEM"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "BRAZIL",
+    "leagues": [
+      {
+        "name": "LIGA DO BRASIL",
+        "teams": [
+          "ATHLETICO-PR",
+          "ATLÉTICO MINEIRO",
+          "ATLÉTICO-GO",
+          "BAHIA",
+          "BOTAFOGO",
+          "CEARÁ SC",
+          "CORITIBA",
+          "FLUMINENSE",
+          "FORTALEZA",
+          "GOIÁS",
+          "GRÊMIO",
+          "INTERNACIONAL",
+          "CORINTHIANS",
+          "SANTOS"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "CHINA",
+    "leagues": [
+      {
+        "name": "CSL",
+        "teams": [
+          "BEIJING GUOAN",
+          "CHONGQING SWM",
+          "DALIAN PRO",
+          "GUANGZHOU",
+          "GUANGZHOU R&F",
+          "HEBEI CFFC",
+          "HENAN JIANYE",
+          "JIANGSU SUNING",
+          "QINGDAO HUANGHAI",
+          "SHANDONG LUNENG",
+          "SHANGHAI SHENHUA",
+          "SHANGHAI SIPG",
+          "SHENZHEN KAISA",
+          "SHIJIAZHUANG",
+          "TIANJIN TEDA",
+          "WUHAN ZALL"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "DENMARK",
+    "leagues": [
+      {
+        "name": "3F SUPERLIGA",
+        "teams": [
+          "AALBORG BK",
+          "AARHUS AGF",
+          "AC HORSENS",
+          "BRØNDBY IF",
+          "FC KØBENHAVN",
+          "FC MIDTJYLLAND",
+          "FC NORDSJÆLLAND",
+          "LYNGBY BK",
+          "ODENSE BK",
+          "RANDERS FC",
+          "SØNDERJYSKE",
+          "VEJLE BOLDKLUB"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "ENGLAND",
+    "leagues": [
+      {
+        "name": "PREMIER LEAGUE",
+        "teams": [
+          "ARSENAL",
+          "ASTON VILLA",
+          "BRIGHTON",
+          "BURNLEY",
+          "CHELSEA",
+          "CRYSTAL PALACE",
+          "EVERTON",
+          "FULHAM",
+          "LEEDS UNITED",
+          "LEICESTER CITY",
+          "LIVERPOOL",
+          "MANCHESTER CITY",
+          "MANCHESTER UTD",
+          "NEWCASTLE UTD",
+          "SHEFFIELD UTD",
+          "SOUTHAMPTON",
+          "SPURS",
+          "WEST BROM",
+          "WEST HAM",
+          "WOLVES"
+        ]
+      },
+      {
+        "name": "EFL CHAMPIONSHIP",
+        "teams": [
+          "AFC BOURNEMOUTH",
+          "BARNSLEY",
+          "BIRMINGHAM CITY",
+          "BLACKBURN ROVERS",
+          "BRENTFORD",
+          "BRISTOL CITY",
+          "CARDIFF CITY",
+          "COVENTRY CITY",
+          "DERBY COUNTY",
+          "HUDDERSFIELD",
+          "LUTON TOWN",
+          "MIDDLESBROUGH",
+          "MILLWALL",
+          "NORWICH",
+          "NOTT'M FOREST",
+          "PRESTON",
+          "QPR",
+          "READING",
+          "ROTHERHAM UTD",
+          "SHEFFIELD WED",
+          "STOKE CITY",
+          "SWANSEA CITY",
+          "WATFORD",
+          "WYCOMBE"
+        ]
+      },
+      {
+        "name": "EFL LEAGUE ONE",
+        "teams": [
+          "ACCRINGTON",
+          "AFC WIMBLEDON",
+          "BLACKPOOL",
+          "BRISTOL ROVERS",
+          "BURTON ALBION",
+          "CHARLTON ATH",
+          "CREWE ALEXANDRA",
+          "DONCASTER",
+          "FLEETWOOD TOWN",
+          "GILLINGHAM",
+          "HULL CITY",
+          "IPSWICH",
+          "LINCOLN CITY",
+          "MK DONS",
+          "NORTHAMPTON",
+          "OXFORD UNITED",
+          "PETERBOROUGH",
+          "PLYMOUTH ARGYLE",
+          "PORTSMOUTH",
+          "ROCHDALE",
+          "SHREWSBURY",
+          "SUNDERLAND",
+          "SWINDON TOWN",
+          "WIGAN ATHLETIC"
+        ]
+      },
+      {
+        "name": "EFL LEAGUE TWO",
+        "teams": [
+          "BARROW",
+          "BOLTON",
+          "BRADFORD CITY",
+          "CAMBRIDGE UTD",
+          "CARLISLE UNITED",
+          "CHELTENHAM TOWN",
+          "COLCHESTER",
+          "CRAWLEY TOWN",
+          "EXETER CITY",
+          "FOREST GREEN",
+          "GRIMSBY TOWN",
+          "HARROGATE TOWN",
+          "LEYTON ORIENT",
+          "MANSFIELD TOWN",
+          "MORECAMBE",
+          "NEWPORT COUNTY",
+          "OLDHAM ATHLETIC",
+          "PORT VALE",
+          "SALFORD CITY",
+          "SCUNTHORPE UTD",
+          "SOUTHEND UNITED",
+          "STEVENAGE",
+          "TRANMERE ROVERS",
+          "WALSALL"
+        ]
+      }
+    ]
+  }
+]
