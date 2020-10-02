@@ -3,6 +3,8 @@ import "./index.css";
 
 import options from "../../data/options.json";
 
+import Dropdowns from "../../Components/Dropdowns/";
+
 class TeamFormPage extends React.Component {
   constructor(props) {
     super(props);
@@ -27,17 +29,6 @@ class TeamFormPage extends React.Component {
     });
   };
 
-  getCountries = () => {
-    const countries = this.state.options.map((option) => {
-      return (
-        <option value={option.country} key={option.country}>
-          {option.country}
-        </option>
-      );
-    });
-    return countries;
-  };
-
   handleLeagueChange = (event) => {
     const e = event.target.value;
 
@@ -47,23 +38,6 @@ class TeamFormPage extends React.Component {
         league: e,
       },
     }));
-    console.log(this.state.form);
-  };
-
-  getLeagues = (country) => {
-    const leagues = this.state.options.map((option) => {
-      if (country === option.country) {
-        const league = option.leagues.map((league) => {
-          return (
-            <option value={league.name} key={league.name}>
-              {league.name}
-            </option>
-          );
-        });
-        return league;
-      }
-    });
-    return leagues;
   };
 
   handleTeamChange = (event) => {
@@ -77,8 +51,39 @@ class TeamFormPage extends React.Component {
     }));
   };
 
+  getCountries = () => {
+    const { options } = this.state;
+    const countries = options.map((option) => {
+      return (
+        <option value={option.country} key={option.country}>
+          {option.country}
+        </option>
+      );
+    });
+    return countries;
+  };
+
+  getLeagues = (formCountry) => {
+    const { options } = this.state;
+    const leagues = options.map((option) => {
+      if (formCountry === option.country) {
+        const league = option.leagues.map((league) => {
+          const { name } = league;
+          return (
+            <option value={name} key={name}>
+              {name}
+            </option>
+          );
+        });
+        return league;
+      }
+    });
+    return leagues;
+  };
+
   getTeams = (formCountry, formLeague) => {
-    const teamOptions = this.state.options.map((option) => {
+    const { options } = this.state;
+    const teamOptions = options.map((option) => {
       if (formCountry === option.country) {
         const leagues = option.leagues.map((league) => {
           if (formLeague === league.name) {
@@ -111,37 +116,16 @@ class TeamFormPage extends React.Component {
       <div>
         <div>
           <h1>Team Idea Submission Form</h1>
+          <div></div>
         </div>
-
-        <div>
-          <div>
-            <label>
-              Country <span>*</span>
-            </label>
-            <select onChange={this.handleCountryChange}>
-              <option className="no-display">Select country</option>
-              {countries}
-            </select>
-          </div>
-          <div>
-            <label>
-              League <span>*</span>
-            </label>
-            <select onChange={this.handleLeagueChange}>
-              <option className="no-display">Select league</option>
-              {leagues}
-            </select>
-          </div>
-          <div>
-            <label>
-              Team <span>*</span>
-            </label>
-            <select onChange={this.handleTeamChange}>
-              <option className="no-display">Select team</option>
-              {teams}
-            </select>
-          </div>
-        </div>
+        <Dropdowns
+          handleCountryChange={this.handleCountryChange}
+          handleLeagueChange={this.handleLeagueChange}
+          handleTeamChange={this.handleTeamChange}
+          countries={countries}
+          leagues={leagues}
+          teams={teams}
+        />
       </div>
     );
   }

@@ -293,5 +293,610 @@
         ]
       }
     ]
+  },
+  {
+    "country": "FRANCE",
+    "leagues": [
+      {
+        "name": "LIGUE 1 UBER EATS",
+        "teams": [
+          "ANGERS SCO",
+          "AS??? MONACO",
+          "ASSE",
+          "BORDEAUX",
+          "DIJON FCO",
+          "FC",
+          "LORIENT",
+          "FC METZ",
+          "FC NANTES",
+          "LOSC",
+          "MONTPELLIER",
+          "NÎMES OLYMPIQUE",
+          "OGC NICE",
+          "OL",
+          "OM",
+          "PARIS SG",
+          "RC LENS",
+          "RENNES",
+          "STADE BRESTOIS 29",
+          "STADE FROM REIMS",
+          "STRASBOURG"
+        ]
+      },
+      {
+        "name": "LIGUE 2 BKT",
+        "teams": [
+          "AC AJACCIO",
+          "AJ??? AUXERRE",
+          "AMIENS SC",
+          "CHÂTEAUROUX",
+          "CLERMONT",
+          "EA GUINGAMP",
+          "FC CHAMBLY",
+          "FCSM",
+          "GRENOBLE",
+          "HAVRE AC",
+          "NANCY",
+          "NIORT",
+          "PARIS FC",
+          "PAU FC",
+          "RODEZ AF",
+          "SM CAEN",
+          "TOULOUSE FC",
+          "TROYES",
+          "USL DUNKERQUE",
+          "VAFC"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "GERMANY",
+    "leagues": [
+      {
+        "name": "BUNDESLIGA",
+        "teams": [
+          "1. FC KÖLN",
+          "1. FSV MAINZ 05",
+          "BIELEFELD",
+          "DORTMUND",
+          "FC AUGSBURG",
+          "FC BAYERN",
+          "FC SCHALKE 04",
+          "FRANKFURT",
+          "HERTHA BERLIN",
+          "LEVERKUSEN",
+          "M'GLADBACH",
+          "RB LEIPZIG",
+          "SC FREIBURG",
+          "TSG HOFFENHEIM",
+          "UNION BERLIN",
+          "VFB STUTTGART",
+          "VFL WOLFSBURG",
+          "WERDER BREMEN"
+        ]
+      },
+      {
+        "name": "BUNDESLIGA 2",
+        "teams": [
+          "1. FC HEIDENHEIM",
+          "1. FC NÜRNBERG",
+          "BRAUNSCHWEIG",
+          "DÜSSELDORF",
+          "ERZGEBIRGE AUE",
+          "FC ST. PAULI",
+          "GREUTHER FÜRTH",
+          "HAMBURGER SV",
+          "HANNOVER 96",
+          "HOLSTEIN KIEL",
+          "JAHN REGENSBURG",
+          "KARLSRUHER SC",
+          "SC PADERBORN 07",
+          "SV DARMSTADT 98",
+          "SV SANDHAUSEN",
+          "VFL BOCHUM",
+          "VFL OSNABRÜCK",
+          "WÜRZBURG"
+        ]
+      },
+      {
+        "name": "3. LIGA",
+        "teams": [
+          "1. FC MAGDEBURG",
+          "1860 MÜNCHEN",
+          "DYNAMO DRESDEN",
+          "FC BAYERN II",
+          "FC INGOLSTADT",
+          "FSV ZWICKAU",
+          "HACHING",
+          "HALLESCHER FC",
+          "HANSA ROSTOCK",
+          "KAISERSLAUTERN",
+          "KFC UERDINGEN",
+          "MSV",
+          "DUISBURG",
+          "SAARBRÜCKEN",
+          "SC VERL",
+          "SV MEPPEN",
+          "SV WALDHOF",
+          "SVWW",
+          "TÜRKGÜCÜ",
+          "VFB LÜBECK",
+          "VIKTORIA KÖLN"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "IRELAND",
+    "leagues": [
+      {
+        "name": "SSE AIRTRICITY LGE",
+        "teams": [
+          "BOHEMIAN FC",
+          "CORK CITY",
+          "DERRY CITY",
+          "DUNDALK",
+          "FINN HARPS",
+          "SHAMROCK ROVERS",
+          "SHELBOURNE",
+          "SLIGO ROVERS",
+          "ST. PATS",
+          "WATERFORD FC"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "ITALY",
+    "leagues": [
+      {
+        "name": "SERIE A TIM",
+        "teams": [
+          "ATALANTA",
+          "BENEVENTO",
+          "BOLOGNA",
+          "CAGLIARI",
+          "CROTONE",
+          "FIORENTINA",
+          "GENOA",
+          "HELLAS VERONA",
+          "INTER MILANO",
+          "LA SPEZIA",
+          "LAZIO",
+          "AC MILAN",
+          "NAPOLI",
+          "PARMA",
+          "JUVENTUS FC",
+          "AC ROMA",
+          "SAMPDORIA",
+          "SASSUOLO",
+          "TORINO",
+          "UDINESE"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "JAPAN",
+    "leagues": [
+      {
+        "name": "MEIJI YASUDA J1",
+        "teams": [
+          "CEREZO OSAKA",
+          "FC TOKYO",
+          "GAMBA OSAKA",
+          "H. CONSA SAPPORO",
+          "KASHIMA ANTLERS",
+          "KASHIMA REYSOL",
+          "KAWASAKI-F",
+          "NAGOYA GRAMPUS",
+          "OITA TRINITA",
+          "S-HIROSHIMA",
+          "SAGAN TOSU",
+          "SHIMIZU S-PULSE",
+          "SHONAN BELLMARE",
+          "URAWA REDS",
+          "VEGALTA SENDAI",
+          "VISSEL KOBE",
+          "YOKOHAMA F ･ M",
+          "YOKOHAMA FC"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "KOREA REPUBLIC",
+    "leagues": [
+      {
+        "name": "K LEAGUE 1",
+        "teams": [
+          "BUSAN I PARK",
+          "DAEGU FC",
+          "FC SEOUL",
+          "GANGWON FC",
+          "GWANGJU FC",
+          "INCHEON UNITED",
+          "JEONBUK HYUNDAI",
+          "POHANG STEELERS",
+          "SANGJU SANGMU",
+          "SEONGNAM FC",
+          "SUWON SAMSUNG",
+          "ULSAN HYUNDAI"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "MEXICO",
+    "leagues": [
+      {
+        "name": "LIGA BBVA MX",
+        "teams": [
+          "AMÉRICA",
+          "ATLAS",
+          "ATLÉTICO DE SAN LUIS",
+          "CRUZ AZUL",
+          "FC JUÁREZ",
+          "GUADALAJARA",
+          "LEÓN",
+          "MAZATLÁN FC",
+          "NECAXA",
+          "PACHUCA",
+          "PUEBLA",
+          "PUMAS",
+          "QUERÉTARO",
+          "RAYADOS",
+          "SANTOS LAGUNA",
+          "TIGRES",
+          "TIJUANA",
+          "TOLUCA"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "NETHERLANDS",
+    "leagues": [
+      {
+        "name": "EREDIVISIE",
+        "teams": [
+          "ADO DEN HAAG",
+          "AJAX",
+          "AZ",
+          "FC EMMEN",
+          "FC GRONINGEN",
+          "FC TWENTE",
+          "FC UTRECHT",
+          "FEYENOORD",
+          "FORTUNA SITTARD",
+          "HERACLES ALMELO",
+          "PEC ZWOLLE",
+          "PSV",
+          "RKC WAALWIJK",
+          "SC HEERENVEEN",
+          "SPARTA ROTTERDAM",
+          "VITESSE",
+          "VVV-VENLO",
+          "WILLEM II"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "NORWAY",
+    "leagues": [
+      {
+        "name": "ELITESERIEN",
+        "teams": [
+          "AALESUNDS FK",
+          "FK BODØ / GLIMT",
+          "FK HAUGESUND",
+          "IK START",
+          "KRISTIANSUND",
+          "MJØNDALEN IF",
+          "MOLDE FK",
+          "ODDS BK",
+          "ROSENBORG BK",
+          "SANDEFJORD",
+          "SARPSBORG 08",
+          "SK BRANN",
+          "STABÆK FOTBALL",
+          "STRØMSGODSET IF",
+          "VÅLERENGA FOTBALL",
+          "VIKING FK"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "POLAND",
+    "leagues": [
+      {
+        "name": "PKO EKSTRAKLASA",
+        "teams": [
+          "CRACOVIA",
+          "GÓRNIK ZABRZE",
+          "JAGIELLONIA",
+          "LECH POZNAŃ",
+          "LECHIA GDAŃSK",
+          "LEGIA WARSZAWA",
+          "PGE STAL MIELEC",
+          "PIAST GLIWICE",
+          "PODBESKIDZIE",
+          "POGOŃ SZCZECIN",
+          "RAKÓWĘSTOCHOWA",
+          "ŚLĄWĘSTOCHOWA?????",
+          "ŚLĄWĘSTOCHOWA?????",
+          "ŚLĄWĘSTOCHOWA?????",
+          "ŚLĄWĘSTOCHOWA",
+          "ŚLĄWSK WROCŁAW",
+          "WARTAŁBIE",
+          "ZAGREB",
+          "WARTA",
+          "WARTAŁBIE"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "REST OF WORLD",
+    "leagues": [
+      {
+        "name": "REST OF WORLD",
+        "teams": [
+          "AC MONZA",
+          "AEK ATHENS",
+          "AL AIN FC",
+          "BRESCIA",
+          "CHIEVO VERONA",
+          "CSKA MOSCOW",
+          "DINAMO ZAGREB",
+          "DYNAMO KYIV",
+          "EMPOLI",
+          "HJK HELSINKI",
+          "KAIZER CHIEFS",
+          "LECCE",
+          "LOKOMOTIV MOSCOW",
+          "OLYMPIACOS CFP",
+          "ORLANDO PIRATES",
+          "PANATHINAIKOS",
+          "PAOK",
+          "SHAKHTAR DONETSK",
+          "SLAVIA PRAHA",
+          "SPARTA PRAHA",
+          "SPARTAK MOSCOW",
+          "SPAL",
+          "VIKTORIA PLZEŇ",
+          "SOCCER AID",
+          "ADIDAS ALL-STAR",
+          "MLS ALL STARS"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "ROMANIA",
+    "leagues": [
+      {
+        "name": "LIGA I",
+        "teams": [
+          "ACADEMICA",
+          "ASTRA GIURGIU",
+          "CFR 1907 CLUJ",
+          "CHINDIA",
+          "FC ARGEȘ",
+          "FC BOTOŞANI",
+          "FC DINAMO 1948",
+          "FC HERMANNSTADT",
+          "FC VIITORUL",
+          "FC VOLUNTARI",
+          "FCSB",
+          "GAZ METAN MEDIAȘ",
+          "POLITEHNICA IAŞI",
+          "SEPSI OSK",
+          "UNIV. CRAIOVA",
+          "UTA ARAD"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "SAUDI ARABIA",
+    "leagues": [
+      {
+        "name": "MBS PRO LEAGUE",
+        "teams": [
+          "ABHA CLUB",
+          "AL ADALAH",
+          "AL AHLI",
+          "AL FAISALY",
+          "AL FATEH",
+          "AL FAYHA",
+          "AL HAZEM",
+          "AL HILAL",
+          "AL ITTIHAD",
+          "AL NASSR",
+          "AL RAED",
+          "AL SHABAB",
+          "AL TAAWOUN",
+          "AL WEHDA",
+          "DAMAC FC",
+          "ETTIFAQ FC"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "SPAIN",
+    "leagues": [
+      {
+        "name": "LALIGA SANTANDER",
+        "teams": [
+          "ATHLETIC CLUB",
+          "ATLÉTICO DE MADRID",
+          "CA OSASUNA",
+          "CÁDIZ CF",
+          "D. ALAVÉS",
+          "ELCHE CF",
+          "FC BARCELONA",
+          "GETAFE CF",
+          "GRANADA CF",
+          "LEVANTE UD",
+          "R. VALLADOLID CF",
+          "RC CELTA",
+          "REAL BETIS",
+          "REAL MADRID",
+          "REAL SOCIEDAD",
+          "SD EIBAR",
+          "SD HUESCA",
+          "SEVILLA FC",
+          "VALENCIA CF",
+          "VILLARREAL CF"
+        ]
+      },
+      {
+        "name": "LALIGA SMARTBANK",
+        "teams": [
+          "AD ALCORCÓN",
+          "ALBACETE BP",
+          "CD CASTELLÓN",
+          "CD LEGANÉS",
+          "CD LUGO",
+          "CD MIRANDÉS",
+          "CD TENERIFE",
+          "CE SABADELL",
+          "CF FUENLABRADA",
+          "FC CARTAGENA",
+          "GIRONA FC",
+          "MÁLAGA CF",
+          "R. OVIEDO",
+          "R. SPORTING",
+          "R. ZARAGOZA",
+          "RAYO VALLECANO",
+          "RCD ESPANYOL",
+          "RCD MALLORCA",
+          "SD PONFERRADINA",
+          "UD ALMERÍA",
+          "UD LAS PALMAS",
+          "UD LOGROÑÉS"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "SWEDEN",
+    "leagues": [
+      {
+        "name": "ALLSVENSKAN",
+        "teams": [
+          "AIK",
+          "BK HÄCKEN",
+          "DJURGÅRDENS IF",
+          "FALKENBERGS FF",
+          "HAMMARBY IF",
+          "HELSINGBORGS IF",
+          "IF ELFSBORG",
+          "IFK GÖTEBORG",
+          "IFK NORRKÖPING",
+          "IK SIRIUS",
+          "KALMAR FF",
+          "MALMÖ FF",
+          "MJÄLLBY AIF",
+          "ÖREBRO SK",
+          "ÖSTERSUNDS FK",
+          "VARBERGS BOIS"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "SWITZERLAND",
+    "leagues": [
+      {
+        "name": "RSL",
+        "teams": [
+          "BSC YOUNG BOYS",
+          "FC BASEL 1893",
+          "FC LUGANO",
+          "FC LUZERN",
+          "FC SION",
+          "FC ST. GALLEN",
+          "FC VADUZ",
+          "FC ZÜRICH",
+          "LAUSANNE-SPORT",
+          "SERVETTE FC"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "TURKEY",
+    "leagues": [
+      {
+        "name": "SÜPER LIG",
+        "teams": [
+          "ALANYASPOR",
+          "ANTALYASPOR",
+          "BAŞAKŞEHIR",
+          "BB ERZURUMSPOR",
+          "BEŞIKTAŞ",
+          "ÇAYKUR RIZESPOR",
+          "DENIZLISPOR",
+          "FENERBAHÇE",
+          "GALATASARAY",
+          "GAZIANTEP",
+          "GENÇLERBIRLIĞI",
+          "GÖZTEPE",
+          "HATAYSPOR",
+          "KARAGÜMRÜK SK",
+          "KASAYSIMPAISPOR",
+          "YEHÜMRÜK SK",
+          "SAYSIMPAISPOR?????",
+          "KÄRGÜMRÜKKK",
+          "SAYSIMPAISPOR?????",
+          "ANKONYPOR",
+          "KANGÜMRÜKKK",
+          "SAYSIMPAISPOR",
+          "KÄSIMASSPOR"
+        ]
+      }
+    ]
+  },
+  {
+    "country": "USA/CANADA",
+    "leagues": [
+      {
+        "name": "MLS",
+        "teams": [
+          "ATLANTA UNITED",
+          "CHICAGO FIRE",
+          "COLORADO RAPIDS",
+          "COLUMBUS CREW SC",
+          "DC UNITED",
+          "FC CINCINNATI",
+          "FC DALLAS",
+          "HOUSTON DYNAMO",
+          "IMPACT MONTREAL",
+          "INTER MIAMI CF",
+          "LA GALAXY",
+          "LAFC",
+          "MINNESOTA UNITED",
+          "NASHVILLE SC",
+          "NEW ENGLAND",
+          "NEW YORK CITY FC",
+          "NY RED BULLS",
+          "ORLANDO CITY",
+          "PHILADELPHIA",
+          "PORTLAND TIMBERS",
+          "REAL SALT LAKE",
+          "SEATTLE SOUNDERS",
+          "SJ EARTHQUAKES",
+          "SPORTING KC",
+          "TORONTO FC",
+          "WHITECAPS FC"
+        ]
+      }
+    ]
   }
 ]
