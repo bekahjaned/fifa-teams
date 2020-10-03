@@ -12,34 +12,55 @@ import { NavWrap } from "../../Elements/NavWrap/";
 import { Nav } from "../../Elements/Nav/";
 import { NavLinks } from "../../Elements/NavLinks";
 
-function App() {
-  return (
-    <Router>
-      <NavWrap>
-        <Nav>
-          <Link to="/">
-            <img className="logo" src={logo} alt="logo" />
-          </Link>
-          <NavLinks>
-            <Link to="/team-form">Submit a Team</Link>
-            <Link to="/sign-up">Sign Up</Link>
-          </NavLinks>
-        </Nav>
+class App extends React.Component {
+  constructor(props) {
+    super(props);
 
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/team-form">
-            <TeamFormPage />
-          </Route>
-          {/* <Route path="/sign-up">
-            <SignUpPage />
-          </Route> */}
-        </Switch>
-      </NavWrap>
-    </Router>
-  );
+    this.state = {
+      color: "#3b003c",
+    };
+  }
+
+  changeColor = (color) => {
+    this.setState({ color });
+  };
+
+  render() {
+    return (
+      <div style={{ backgroundColor: this.state.color }}>
+        <Router>
+          <NavWrap>
+            <Nav>
+              <Link to="/" onClick={() => this.changeColor("#3b003c")}>
+                <img className="logo" src={logo} alt="logo" />
+              </Link>
+              <NavLinks>
+                <Link
+                  to="/team-form"
+                  onClick={() => this.changeColor("#0d0d0d")}
+                >
+                  Submit a Team
+                </Link>
+                <Link to="/sign-up">Sign Up</Link>
+              </NavLinks>
+            </Nav>
+
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/team-form">
+                <TeamFormPage />
+              </Route>
+              {/* <Route path="/sign-up">
+              <SignUpPage />
+            </Route> */}
+            </Switch>
+          </NavWrap>
+        </Router>
+      </div>
+    );
+  }
 }
 
 export default App;
