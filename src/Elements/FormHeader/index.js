@@ -4,6 +4,10 @@ export const FormHeader = styled.div`
   padding-bottom: 60px;
   margin: 0;
 
+  img {
+    color: #f2f2f2;
+  }
+
   h1 {
     color: #f2f2f2;
     font-size: 50px;

@@ -10,7 +10,7 @@ function CountryDropdown({ handleCountryChange, countries }) {
         Country <span>*</span>
       </DropdownLabel>
       <select className="small" onChange={handleCountryChange}>
-        <option className="no-display">Select Country</option>
+        <option className="no-display">SELECT COUNTRY</option>
         {countries}
       </select>
     </DropdownWrap>

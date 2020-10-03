@@ -10,7 +10,7 @@ function LeagueDropdown({ handleLeagueChange, leagues }) {
         League <span>*</span>
       </DropdownLabel>
       <select className="large" onChange={handleLeagueChange}>
-        <option className="no-display">Select League</option>
+        <option className="no-display">SELECT LEAGUE</option>
         {leagues}
       </select>
     </DropdownWrap>

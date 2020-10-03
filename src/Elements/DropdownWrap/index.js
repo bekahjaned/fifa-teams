@@ -38,7 +38,7 @@ export const DropdownWrap = styled.div`
     outline: none;
   }
 
-  .no-display {
+  option.no-display {
     display: none;
   }
 `;

@@ -10,7 +10,7 @@ function TeamDropdown({ handleTeamChange, teams }) {
         Team <span>*</span>
       </DropdownLabel>
       <select className="medium" onChange={handleTeamChange}>
-        <option className="no-display">Select Team</option>
+        <option className="no-display">SELECT TEAM</option>
         {teams}
       </select>
     </DropdownWrap>

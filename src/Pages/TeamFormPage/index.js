@@ -2,6 +2,7 @@ import React from "react";
 
 import options from "../../data/options.json";
 
+import Breadcrumb from "../../Components/Breadcrumb/";
 import Dropdowns from "../../Components/Dropdowns/";
 
 import { FormWrap } from "../../Elements/FormWrap/";
@@ -115,6 +116,7 @@ class TeamFormPage extends React.Component {
     return (
       <FormWrap>
         <FormHeader>
+          <Breadcrumb text="Team Ideas" />
           <h1>Team Idea Submission Form</h1>
           <Line />
         </FormHeader>
