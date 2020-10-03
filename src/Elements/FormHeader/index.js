@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const FormHeader = styled.div`
-  padding-bottom: 60px;
-  margin: 0;
+const media = { desktop: "@media(min-width: 1000px)" };
 
+export const FormHeader = styled.div`
   img {
     color: #f2f2f2;
   }
@@ -13,6 +12,13 @@ export const FormHeader = styled.div`
     font-size: 50px;
     font-weight: 700px;
     padding-bottom: 24px;
+    margin: 0;
+  }
+
+  ${media.desktop} {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    padding-bottom: 60px;
     margin: 0;
   }
 `;

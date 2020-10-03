@@ -3,11 +3,18 @@ import React from "react";
 import options from "../../data/options.json";
 
 import Breadcrumb from "../../Components/Breadcrumb/";
-import Dropdowns from "../../Components/Dropdowns/";
+import CountryDropdown from "../../Components/CountryDropdown/";
+import LeagueDropdown from "../../Components/LeagueDropdown/";
+import TeamDropdown from "../../Components/TeamDropdown";
+import TextAreaItem from "../../Components/TextAreaItem";
 
 import { FormWrap } from "../../Elements/FormWrap/";
+import { FormContent } from "../../Elements/FormContent/";
 import { Line } from "../../Elements/Line/";
 import { FormHeader } from "../../Elements/FormHeader/";
+import { Dropdowns } from "../../Elements/Dropdowns/";
+import { TextAreas } from "../../Elements/TextAreas/";
+import { SubmitButton } from "../../Elements/SubmitButton/";
 
 class TeamFormPage extends React.Component {
   constructor(props) {
@@ -115,19 +122,55 @@ class TeamFormPage extends React.Component {
 
     return (
       <FormWrap>
-        <FormHeader>
-          <Breadcrumb text="Team Ideas" />
-          <h1>Team Idea Submission Form</h1>
-          <Line />
-        </FormHeader>
-        <Dropdowns
-          handleCountryChange={this.handleCountryChange}
-          handleLeagueChange={this.handleLeagueChange}
-          handleTeamChange={this.handleTeamChange}
-          countries={countries}
-          leagues={leagues}
-          teams={teams}
-        />
+        <FormContent>
+          <FormHeader>
+            <Breadcrumb text="Team Ideas" />
+            <h1>Team Idea Submission Form</h1>
+            <Line />
+          </FormHeader>
+
+          <Dropdowns>
+            <CountryDropdown
+              handleCountryChange={this.handleCountryChange}
+              countries={countries}
+            />
+            <LeagueDropdown
+              handleLeagueChange={this.handleLeagueChange}
+              leagues={leagues}
+            />
+            <TeamDropdown
+              handleTeamChange={this.handleTeamChange}
+              teams={teams}
+            />
+          </Dropdowns>
+
+          <TextAreas>
+            <TextAreaItem
+              title="Team Background"
+              extra="club nickname, major accomplishments, and relevant facts"
+              class="regular"
+            />
+            <TextAreaItem
+              title="Management Guidelines"
+              extra="signing policies, youth development, priorities, preferred
+          formation, and ATT/DEF style"
+              class="bullet"
+            />
+            <TextAreaItem
+              title="Team Objectives"
+              extra="current team objections for the league and cups, team overhaul and
+          financial fairplay"
+              class="bullet"
+            />
+            <TextAreaItem
+              title="Name, nickname or u/handle"
+              extra="this is to give you credit"
+              class="small"
+            />
+          </TextAreas>
+
+          <SubmitButton>Submit</SubmitButton>
+        </FormContent>
       </FormWrap>
     );
   }
