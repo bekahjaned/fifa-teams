@@ -3,9 +3,7 @@ import React from "react";
 import options from "../../data/options.json";
 
 import Breadcrumb from "../../Components/Breadcrumb/";
-import CountryDropdown from "../../Components/CountryDropdown/";
-import LeagueDropdown from "../../Components/LeagueDropdown/";
-import TeamDropdown from "../../Components/TeamDropdown";
+import DropdownItem from "../../Components/DropdownItem";
 import TextAreaItem from "../../Components/TextAreaItem";
 
 import { FormWrap } from "../../Elements/FormWrap/";
@@ -130,17 +128,26 @@ class TeamFormPage extends React.Component {
           </FormHeader>
 
           <Dropdowns>
-            <CountryDropdown
-              handleCountryChange={this.handleCountryChange}
-              countries={countries}
+            <DropdownItem
+              title="Country"
+              size="small"
+              handleChange={this.handleCountryChange}
+              placeholder="SELECT COUNTRY"
+              options={countries}
             />
-            <LeagueDropdown
-              handleLeagueChange={this.handleLeagueChange}
-              leagues={leagues}
+            <DropdownItem
+              title="League"
+              size="large"
+              handleChange={this.handleLeagueChange}
+              placeholder="SELECT LEAGUE"
+              options={leagues}
             />
-            <TeamDropdown
-              handleTeamChange={this.handleTeamChange}
-              teams={teams}
+            <DropdownItem
+              title="Team"
+              size="medium"
+              handleChange={this.handleTeamChange}
+              placeholder="SELECT TEAM"
+              options={teams}
             />
           </Dropdowns>
 
