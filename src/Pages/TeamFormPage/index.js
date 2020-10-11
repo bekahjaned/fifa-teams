@@ -22,13 +22,13 @@ class TeamFormPage extends React.Component {
 
     this.state = {
       form: {
-        country: "SELECT COUNTRY",
-        league: "SELECT LEAGUE",
-        team: "SELECT TEAM",
-        background: "",
-        guidelines: "",
-        objectives: "",
-        nickname: "",
+        country: undefined,
+        league: undefined,
+        team: undefined,
+        background: undefined,
+        guidelines: undefined,
+        objectives: undefined,
+        nickname: undefined,
       },
       formErrors: {
         country: "",
@@ -113,9 +113,19 @@ class TeamFormPage extends React.Component {
       team: this.state.form.team,
     };
 
-    console.log(dropdownInputs);
+    const inputArr = Object.values(dropdownInputs).map((input) => {
+      if (input !== undefined) {
+        return true;
+      } else {
+        return false;
+      }
+    });
 
-    // left off here - need to check if dropdown values are valid!
+    if (inputArr[0] && inputArr[1] && inputArr[2]) {
+      return true;
+    } else {
+      return false;
+    }
   };
 
   textAreaValid = () => {
@@ -126,7 +136,7 @@ class TeamFormPage extends React.Component {
     };
 
     const inputArr = Object.values(textInputs).map((input) => {
-      if (input.length >= 1) {
+      if (input !== undefined) {
         return true;
       }
       return false;
@@ -142,7 +152,7 @@ class TeamFormPage extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
 
-    if (this.textAreaValid()) {
+    if (this.textAreaValid() && this.dropdownValid()) {
       const {
         country,
         league,
@@ -187,19 +197,19 @@ class TeamFormPage extends React.Component {
     }
   };
 
-  resetForm() {
+  resetForm = () => {
     this.setState({
       form: {
-        country: "SELECT COUNTRY",
-        league: "SELECT LEAGUE",
-        team: "SELECT TEAM",
-        background: "",
-        guidelines: "",
-        objectives: "",
-        nickname: "",
+        country: undefined,
+        league: undefined,
+        team: undefined,
+        background: undefined,
+        guidelines: undefined,
+        objectives: undefined,
+        nickname: undefined,
       },
     });
-  }
+  };
 
   // getting country, league or team options depending on dropdown option chosen
   getCountries = () => {
