@@ -301,7 +301,7 @@
         "name": "LIGUE 1 UBER EATS",
         "teams": [
           "ANGERS SCO",
-          "AS??? MONACO",
+          "AS MONACO",
           "ASSE",
           "BORDEAUX",
           "DIJON FCO",
@@ -327,7 +327,7 @@
         "name": "LIGUE 2 BKT",
         "teams": [
           "AC AJACCIO",
-          "AJ??? AUXERRE",
+          "AJ AUXERRE",
           "AMIENS SC",
           "CHÂTEAUROUX",
           "CLERMONT",
@@ -626,15 +626,11 @@
           "PODBESKIDZIE",
           "POGOŃ SZCZECIN",
           "RAKÓWĘSTOCHOWA",
-          "ŚLĄWĘSTOCHOWA?????",
-          "ŚLĄWĘSTOCHOWA?????",
-          "ŚLĄWĘSTOCHOWA?????",
-          "ŚLĄWĘSTOCHOWA",
           "ŚLĄWSK WROCŁAW",
-          "WARTAŁBIE",
-          "ZAGREB",
-          "WARTA",
-          "WARTAŁBIE"
+          "WARTA POZNAN",
+          "WISLA KRAKOW",
+          "WISLA PLOCK",
+          "ZAGLEBIE LUBIN"
         ]
       }
     ]
@@ -850,15 +846,13 @@
           "GÖZTEPE",
           "HATAYSPOR",
           "KARAGÜMRÜK SK",
-          "KASAYSIMPAISPOR",
-          "YEHÜMRÜK SK",
-          "SAYSIMPAISPOR?????",
-          "KÄRGÜMRÜKKK",
-          "SAYSIMPAISPOR?????",
-          "ANKONYPOR",
-          "KANGÜMRÜKKK",
-          "SAYSIMPAISPOR",
-          "KÄSIMASSPOR"
+          "KASAYSIMPASA SK",
+          "KAYSERISPOR",
+          "KONYASPOR",
+          "MKE ANKARAGUCU",
+          "SIVASSPOR",
+          "TRABZONSPOR",
+          "YENI MALATYASPOR"
         ]
       }
     ]

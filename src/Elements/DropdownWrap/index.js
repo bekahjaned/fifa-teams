@@ -41,4 +41,8 @@ export const DropdownWrap = styled.div`
   option.no-display {
     display: none;
   }
+
+  .errorMsg {
+    color: white;
+  }
 `;

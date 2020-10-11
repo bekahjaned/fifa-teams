@@ -7,13 +7,16 @@ export const FormContent = styled.div`
   max-width: 414px;
 
   ${media.desktop} {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-    grid-gap: 20px;
-    grid-row-gap: 0;
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 100px;
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      align-items: center;
+      grid-gap: 20px;
+      grid-row-gap: 0;
+    }
   }
 `;

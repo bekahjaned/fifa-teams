@@ -14,37 +14,36 @@ export const TextAreaWrap = styled.div`
     }
   }
 
+  textarea {
+    font-family: "Nunito", sans-serif;
+    border-radius: 4px;
+    background-color: #313131;
+    resize: none;
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px;
+  }
+
   textarea.regular {
     width: 100%;
     height: 140px;
-    padding: 8px;
-    border-radius: 4px;
-    background-color: #313131;
     outline: none;
     overflow: auto;
-    color: #f2f2f2;
-    font-size: 16px;
-    resize: none;
   }
 
   textarea.bullet {
     width: 100%;
     height: 200px;
-    padding: 8px;
-    border-radius: 4px;
-    background-color: #313131;
     outline: none;
     overflow: auto;
-    color: #f2f2f2;
-    font-size: 16px;
-    resize: none;
   }
 
   textarea.small {
     width: 300px;
     height: 38px;
-    border-radius: 4px;
-    background-color: #313131;
-    resize: none;
+  }
+
+  span.errorMsg {
+    color: white;
   }
 `;
