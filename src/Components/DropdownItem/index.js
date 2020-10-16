@@ -5,7 +5,6 @@ import { DropdownWrap } from "../../Elements/DropdownWrap";
 
 function DropdownItem({
   title,
-  value,
   size,
   handleChange,
   options,

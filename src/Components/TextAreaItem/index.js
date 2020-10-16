@@ -10,7 +10,6 @@ function TextAreaItem({
   size,
   handleChange,
   id,
-  length,
   error,
 }) {
   // $(".bullet").focus(function () {
@@ -47,7 +46,7 @@ function TextAreaItem({
         id={id}
         onChange={handleChange}
       />
-      {length > 0 && <span className="errorMsg">{error}</span>}
+      <span className="errorMsg">{error}</span>
     </TextAreaWrap>
   );
 }

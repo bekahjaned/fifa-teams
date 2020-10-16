@@ -25,10 +25,10 @@ class TeamFormPage extends React.Component {
         country: undefined,
         league: undefined,
         team: undefined,
-        background: undefined,
-        guidelines: undefined,
-        objectives: undefined,
-        nickname: undefined,
+        background: "",
+        guidelines: "",
+        objectives: "",
+        nickname: "",
       },
       formErrors: {
         country: "",
@@ -43,6 +43,7 @@ class TeamFormPage extends React.Component {
   }
 
   // handling change of state
+  // to-do: see if I can do this with one function
   handleCountryChange = (event) => {
     const e = event.target.value;
 
@@ -78,71 +79,153 @@ class TeamFormPage extends React.Component {
   handleChange = (e) => {
     e.preventDefault();
     const { name, value } = e.target;
-    let formErrors = { ...this.state.formErrors };
-
-    switch (name) {
-      case "background":
-        formErrors.background =
-          value.length < 1 ? "Please enter the team background." : "";
-        break;
-      case "guidelines":
-        formErrors.guidelines =
-          value.length < 1 ? "Please enter the management guidelines." : "";
-        break;
-      case "objectives":
-        formErrors.objectives =
-          value.length < 1 ? "Please enter the team objectives." : "";
-        break;
-      default:
-        break;
-    }
 
     this.setState((prevState) => ({
       form: {
         ...prevState.form,
         [name]: value,
       },
-      formErrors,
     }));
   };
 
-  dropdownValid = () => {
-    const dropdownInputs = {
-      country: this.state.form.country,
-      league: this.state.form.league,
-      team: this.state.form.team,
-    };
+  isValid = () => {
+    const {
+      country,
+      league,
+      team,
+      background,
+      guidelines,
+      objectives,
+    } = this.state.form;
 
-    const inputArr = Object.values(dropdownInputs).map((input) => {
-      if (input !== undefined) {
+    const countryValid = () => {
+      if (country !== undefined) {
+        this.setState((prevState) => ({
+          formErrors: {
+            ...prevState.formErrors,
+            country: "",
+          },
+        }));
         return true;
       } else {
+        this.setState((prevState) => ({
+          formErrors: {
+            ...prevState.formErrors,
+            country: "Please select a country",
+          },
+        }));
         return false;
       }
-    });
-
-    if (inputArr[0] && inputArr[1] && inputArr[2]) {
-      return true;
-    } else {
-      return false;
-    }
-  };
-
-  textAreaValid = () => {
-    const textInputs = {
-      background: this.state.form.background,
-      guidelines: this.state.form.guidelines,
-      objectives: this.state.form.objectives,
     };
 
-    const inputArr = Object.values(textInputs).map((input) => {
-      if (input !== undefined) {
+    const leagueValid = () => {
+      if (league !== undefined) {
+        this.setState((prevState) => ({
+          formErrors: {
+            ...prevState.formErrors,
+            league: "",
+          },
+        }));
         return true;
+      } else {
+        this.setState((prevState) => ({
+          formErrors: {
+            ...prevState.formErrors,
+            league: "Please select a league",
+          },
+        }));
+        return false;
       }
-      return false;
-    });
+    };
 
-    if (inputArr[0] && inputArr[1] && inputArr[2]) {
+    const teamValid = () => {
+      if (team !== undefined) {
+        this.setState((prevState) => ({
+          formErrors: {
+            ...prevState.formErrors,
+            team: "",
+          },
+        }));
+        return true;
+      } else {
+        this.setState((prevState) => ({
+          formErrors: {
+            ...prevState.formErrors,
+            team: "Please select a team",
+          },
+        }));
+        return false;
+      }
+    };
+
+    const backgroundValid = () => {
+      if (background !== undefined && background !== "") {
+        this.setState((prevState) => ({
+          formErrors: {
+            ...prevState.formErrors,
+            background: "",
+          },
+        }));
+        return true;
+      } else {
+        this.setState((prevState) => ({
+          formErrors: {
+            ...prevState.formErrors,
+            background: "Don't forget to fill out this field",
+          },
+        }));
+        return false;
+      }
+    };
+
+    const guidelinesValid = () => {
+      if (guidelines !== undefined && guidelines !== "") {
+        this.setState((prevState) => ({
+          formErrors: {
+            ...prevState.formErrors,
+            guidelines: "",
+          },
+        }));
+        return true;
+      } else {
+        this.setState((prevState) => ({
+          formErrors: {
+            ...prevState.formErrors,
+            guidelines: "Don't forget to fill out this field",
+          },
+        }));
+        return false;
+      }
+    };
+
+    const objectivesValid = () => {
+      if (objectives !== undefined && objectives !== "") {
+        this.setState((prevState) => ({
+          formErrors: {
+            ...prevState.formErrors,
+            objectives: "",
+          },
+        }));
+        return true;
+      } else {
+        this.setState((prevState) => ({
+          formErrors: {
+            ...prevState.formErrors,
+            objectives: "Don't forget to fill out this field",
+          },
+        }));
+        return false;
+      }
+    };
+
+    if (
+      countryValid() &&
+      leagueValid() &&
+      teamValid() &&
+      backgroundValid() &&
+      guidelinesValid() &&
+      objectivesValid()
+    ) {
       return true;
     } else {
       return false;
@@ -152,7 +235,7 @@ class TeamFormPage extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
 
-    if (this.textAreaValid() && this.dropdownValid()) {
+    if (this.isValid()) {
       const {
         country,
         league,
@@ -203,10 +286,18 @@ class TeamFormPage extends React.Component {
         country: undefined,
         league: undefined,
         team: undefined,
-        background: undefined,
-        guidelines: undefined,
-        objectives: undefined,
-        nickname: undefined,
+        background: "",
+        guidelines: "",
+        objectives: "",
+        nickname: "",
+      },
+      formErrors: {
+        country: "",
+        league: "",
+        team: "",
+        background: "",
+        guidelines: "",
+        objectives: "",
       },
     });
   };
@@ -265,9 +356,9 @@ class TeamFormPage extends React.Component {
   };
 
   render() {
-    const { formErrors } = this.state;
+    const { form, formErrors } = this.state;
 
-    const { country, league } = this.state.form;
+    const { country, league } = form;
     const countries = this.getCountries();
     const leagues = this.getLeagues(country);
     const teams = this.getTeams(country, league);
@@ -286,7 +377,7 @@ class TeamFormPage extends React.Component {
               <DropdownItem
                 name="country"
                 title="Country"
-                value={this.state.form.country}
+                value={form.country}
                 size="small"
                 handleChange={this.handleCountryChange}
                 placeholder="SELECT COUNTRY"
@@ -296,7 +387,7 @@ class TeamFormPage extends React.Component {
               <DropdownItem
                 name="league"
                 title="League"
-                value={this.state.form.league}
+                value={form.league}
                 size="large"
                 handleChange={this.handleLeagueChange}
                 placeholder="SELECT LEAGUE"
@@ -306,7 +397,7 @@ class TeamFormPage extends React.Component {
               <DropdownItem
                 name="team"
                 title="Team"
-                value={this.state.form.team}
+                value={form.team}
                 size="medium"
                 handleChange={this.handleTeamChange}
                 placeholder="SELECT TEAM"
@@ -318,41 +409,38 @@ class TeamFormPage extends React.Component {
             <TextAreas>
               <TextAreaItem
                 name="background"
-                value={this.state.form.background}
+                value={form.background}
                 title="Team Background"
                 extra="club nickname, major accomplishments, and relevant facts"
                 size="regular"
                 handleChange={this.handleChange}
-                length={formErrors.background.length}
                 error={formErrors.background}
               />
               <TextAreaItem
                 name="guidelines"
-                value={this.state.form.guidelines}
+                value={form.guidelines}
                 title="Management Guidelines"
                 extra="signing policies, youth development, priorities, preferred
           formation, and ATT/DEF style"
                 size="bullet"
                 id="bullet"
                 handleChange={this.handleChange}
-                length={formErrors.guidelines.length}
                 error={formErrors.guidelines}
               />
               <TextAreaItem
                 name="objectives"
-                value={this.state.form.objectives}
+                value={form.objectives}
                 title="Team Objectives"
                 extra="current team objections for the league and cups, team overhaul and
           financial fairplay"
                 size="bullet"
                 id="bullet"
                 handleChange={this.handleChange}
-                length={formErrors.objectives.length}
                 error={formErrors.objectives}
               />
               <TextAreaItem
                 name="nickname"
-                value={this.state.form.nickname}
+                value={form.nickname}
                 title="Name, nickname or u/handle"
                 extra="this is to give you credit"
                 size="small"
