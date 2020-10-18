@@ -111,7 +111,7 @@ class TeamFormPage extends React.Component {
         this.setState((prevState) => ({
           formErrors: {
             ...prevState.formErrors,
-            country: "Please select a country",
+            country: "Don't forget to select a country",
           },
         }));
         return false;
@@ -131,7 +131,7 @@ class TeamFormPage extends React.Component {
         this.setState((prevState) => ({
           formErrors: {
             ...prevState.formErrors,
-            league: "Please select a league",
+            league: "Don't forget to select a league",
           },
         }));
         return false;
@@ -151,7 +151,7 @@ class TeamFormPage extends React.Component {
         this.setState((prevState) => ({
           formErrors: {
             ...prevState.formErrors,
-            team: "Please select a team",
+            team: "Don't forget to select a team",
           },
         }));
         return false;
@@ -377,8 +377,13 @@ class TeamFormPage extends React.Component {
               <DropdownItem
                 name="country"
                 title="Country"
+                errorShow={
+                  formErrors.country !== "" ? "errorShow" : "svg-inline--fa"
+                }
+                errorText={formErrors.country !== "" ? "errorText" : ""}
                 value={form.country}
                 size="small"
+                errorState={formErrors.country !== "" ? "errorState" : ""}
                 handleChange={this.handleCountryChange}
                 placeholder="SELECT COUNTRY"
                 options={countries}
@@ -386,9 +391,14 @@ class TeamFormPage extends React.Component {
               />
               <DropdownItem
                 name="league"
-                title="League"
+                title="League Name"
+                errorShow={
+                  formErrors.league !== "" ? "errorShow" : "svg-inline--fa"
+                }
+                errorText={formErrors.league !== "" ? "errorText" : ""}
                 value={form.league}
                 size="large"
+                errorState={formErrors.league !== "" ? "errorState" : ""}
                 handleChange={this.handleLeagueChange}
                 placeholder="SELECT LEAGUE"
                 options={leagues}
@@ -396,9 +406,14 @@ class TeamFormPage extends React.Component {
               />
               <DropdownItem
                 name="team"
-                title="Team"
+                title="Team Name"
+                errorShow={
+                  formErrors.team !== "" ? "errorShow" : "svg-inline--fa"
+                }
+                errorText={formErrors.team !== "" ? "errorText" : ""}
                 value={form.team}
                 size="medium"
+                errorState={formErrors.team !== "" ? "errorState" : ""}
                 handleChange={this.handleTeamChange}
                 placeholder="SELECT TEAM"
                 options={teams}
@@ -411,8 +426,13 @@ class TeamFormPage extends React.Component {
                 name="background"
                 value={form.background}
                 title="Team Background"
-                extra="club nickname, major accomplishments, and relevant facts"
-                size="regular"
+                errorShow={
+                  formErrors.background !== "" ? "errorShow" : "svg-inline--fa"
+                }
+                extra="Club nickname, major accomplishments, and relevant facts"
+                errorText={formErrors.background !== "" ? "errorText" : ""}
+                id="regular"
+                className={formErrors.background !== "" ? "errorState" : ""}
                 handleChange={this.handleChange}
                 error={formErrors.background}
               />
@@ -420,10 +440,14 @@ class TeamFormPage extends React.Component {
                 name="guidelines"
                 value={form.guidelines}
                 title="Management Guidelines"
-                extra="signing policies, youth development, priorities, preferred
+                errorShow={
+                  formErrors.guidelines !== "" ? "errorShow" : "svg-inline--fa"
+                }
+                extra="Signing policies, youth development, priorities, preferred
           formation, and ATT/DEF style"
-                size="bullet"
+                errorText={formErrors.guidelines !== "" ? "errorText" : ""}
                 id="bullet"
+                className={formErrors.guidelines !== "" ? "errorState" : ""}
                 handleChange={this.handleChange}
                 error={formErrors.guidelines}
               />
@@ -431,10 +455,14 @@ class TeamFormPage extends React.Component {
                 name="objectives"
                 value={form.objectives}
                 title="Team Objectives"
-                extra="current team objections for the league and cups, team overhaul and
+                errorShow={
+                  formErrors.objectives !== "" ? "errorShow" : "svg-inline--fa"
+                }
+                extra="Current team objections for the league and cups, team overhaul and
           financial fairplay"
-                size="bullet"
+                errorText={formErrors.objectives !== "" ? "errorText" : ""}
                 id="bullet"
+                className={formErrors.objectives !== "" ? "errorState" : ""}
                 handleChange={this.handleChange}
                 error={formErrors.objectives}
               />
@@ -443,7 +471,7 @@ class TeamFormPage extends React.Component {
                 value={form.nickname}
                 title="Name, nickname or u/handle"
                 extra="this is to give you credit"
-                size="small"
+                id="small"
                 handleChange={this.handleChange}
               />
             </TextAreas>

@@ -3,38 +3,43 @@ import styled from "styled-components";
 export const DropdownWrap = styled.div`
   display: flex;
   flex-direction: column;
-  padding-bottom: 24px;
+  margin-bottom: 26px;
 
-  select.small {
+  select {
+    border: none;
+  }
+
+  select.errorState {
+    border: 1px solid #de4343;
+  }
+
+  select#small {
     width: 200px;
     border-radius: 4px;
     background-color: #313131;
     padding: 8px;
     font-size: 16px;
     color: #f2f2f2;
-    border: none;
     outline: none;
   }
 
-  select.medium {
+  select#medium {
     width: 250px;
     border-radius: 4px;
     background-color: #313131;
     padding: 8px;
     font-size: 16px;
     color: #f2f2f2;
-    border: none;
     outline: none;
   }
 
-  select.large {
+  select#large {
     width: 300px;
     border-radius: 4px;
     background-color: #313131;
     padding: 8px;
     font-size: 16px;
     color: #f2f2f2;
-    border: none;
     outline: none;
   }
 
@@ -42,7 +47,13 @@ export const DropdownWrap = styled.div`
     display: none;
   }
 
-  .errorMsg {
-    color: white;
+  span.errorMsg {
+    color: #de4343;
+    font-size: 16px;
+    margin-left: 16px;
+  }
+
+  div {
+    width: 600px;
   }
 `;
