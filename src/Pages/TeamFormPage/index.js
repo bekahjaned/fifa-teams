@@ -9,6 +9,8 @@ import ErrorPopUp from "../../Components/ErrorPopUp";
 import DropdownItem from "../../Components/DropdownItem";
 import TextAreaItem from "../../Components/TextAreaItem";
 
+import BulletedTextArea from '../../Components/BulletedTextArea/'
+
 import { FormWrap } from "../../Elements/FormWrap/";
 import { FormContent } from "../../Elements/FormContent/";
 import { Line } from "../../Elements/Line/";
@@ -27,8 +29,8 @@ class TeamFormPage extends React.Component {
         league: "",
         team: "",
         background: "",
-        guidelines: "",
-        objectives: "",
+        guidelines: "• ",
+        objectives: "• ",
         nickname: "",
       },
       formErrors: {
@@ -44,7 +46,7 @@ class TeamFormPage extends React.Component {
     };
   }
 
-  // getting country, league or team options depending on dropdown option chosen
+  // getting country, league or team options depending on previous dropdown option chosen
   getCountries = () => {
     const { options } = this.state;
     const countries = options.map((option) => {
@@ -98,7 +100,6 @@ class TeamFormPage extends React.Component {
   };
 
   // handling change of state
-  // to-do: see if I can do this with one function
   handleCountryChange = (event) => {
     const e = event.target.value;
 
@@ -216,8 +217,8 @@ class TeamFormPage extends React.Component {
         league: "",
         team: "",
         background: "",
-        guidelines: "",
-        objectives: "",
+        guidelines: "• ",
+        objectives: "• ",
         nickname: "",
       },
       formErrors: {
@@ -362,7 +363,7 @@ class TeamFormPage extends React.Component {
                 handleChange={this.handleChange}
                 error={formErrors.background}
               />
-              <TextAreaItem
+              <BulletedTextArea 
                 name="guidelines"
                 value={form.guidelines}
                 title="Management Guidelines"
@@ -377,7 +378,7 @@ class TeamFormPage extends React.Component {
                 handleChange={this.handleChange}
                 error={formErrors.guidelines}
               />
-              <TextAreaItem
+              <BulletedTextArea 
                 name="objectives"
                 value={form.objectives}
                 title="Team Objectives"

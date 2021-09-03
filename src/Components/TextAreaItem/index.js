@@ -18,26 +18,7 @@ function TextAreaItem({
   className,
   error,
 }) {
-  // $(".bullet").focus(function () {
-  //   if (document.getElementById("bullet").value === " ") {
-  //     document.getElementById("bullet").value += "• ";
-  //   }
-  // });
 
-  // $(".bullet").keyup(function (event) {
-  //   let keycode = event.keycode ? event.keycode : event.which;
-  //   if (keycode === "13") {
-  //     document.getElementById("bullet").value += "• ";
-  //   }
-
-  //   let txtval = document.getElementById("bullet").value;
-  //   if (txtval.substr(txtval.length - 1) === "\n") {
-  //     document.getElementById("bullet").value = txtval.substring(
-  //       0,
-  //       txtval.length - 1
-  //     );
-  //   }
-  // });
 
   return (
     <TextAreaWrap>
@@ -62,8 +43,6 @@ function TextAreaItem({
       />
     </TextAreaWrap>
   );
-}
+};
 
 export default TextAreaItem;
-
-//
