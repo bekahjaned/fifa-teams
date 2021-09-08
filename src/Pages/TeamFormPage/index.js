@@ -1,6 +1,6 @@
 import React from "react";
 
-// import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
 
 import options from "../../data/options.json";
 
@@ -8,7 +8,6 @@ import Breadcrumb from "../../Components/Breadcrumb/";
 import ErrorPopUp from "../../Components/ErrorPopUp";
 import DropdownItem from "../../Components/DropdownItem";
 import TextAreaItem from "../../Components/TextAreaItem";
-
 import BulletedTextArea from '../../Components/BulletedTextArea/'
 
 import { FormWrap } from "../../Elements/FormWrap/";
@@ -247,22 +246,22 @@ class TeamFormPage extends React.Component {
         nickname,
       } = this.state.form;
 
-      // let templateParams = {
-      //   country: country,
-      //   league: league,
-      //   team: team,
-      //   background: background,
-      //   guidelines: guidelines,
-      //   objectives: objectives,
-      //   nickname: nickname,
-      // };
+      let templateParams = {
+        country: country,
+        league: league,
+        team: team,
+        background: background,
+        guidelines: guidelines,
+        objectives: objectives,
+        nickname: nickname,
+      };
 
-      // emailjs.send(
-      //   "manny_bekah_make_stuff",
-      //   "template_FC9d5ib4",
-      //   templateParams,
-      //   "user_uFBt7OJSbpoxTLb0kocyH"
-      // );
+      emailjs.send(
+        "assistant-coach",
+        "template_FC9d5ib4",
+        templateParams,
+        "user_uFBt7OJSbpoxTLb0kocyH"
+      );
 
       console.log(`
       ----SUBMITTING----
@@ -293,13 +292,16 @@ class TeamFormPage extends React.Component {
       <FormWrap>
         <FormContent>
           <FormHeader>
-            <Breadcrumb text="Team Ideas" />
+            {/* <Breadcrumb text="Team Ideas" /> */}
             <h1>Team Idea Submission Form</h1>
             <Line />
           </FormHeader>
           {formErrors.pageError === true && <ErrorPopUp />}
 
-          <form onSubmit={this.handleSubmit} noValidate>
+          <form 
+            onSubmit={this.handleSubmit} 
+            noValidate
+          >
             <Dropdowns>
               <DropdownItem
                 name="country"

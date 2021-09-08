@@ -41,7 +41,7 @@ class App extends React.Component {
                 >
                   Submit a Team
                 </Link>
-                <Link to="/sign-up">Sign Up</Link>
+                {/* <Link to="/sign-up">Sign Up</Link> */}
               </NavLinks>
             </Nav>
 
