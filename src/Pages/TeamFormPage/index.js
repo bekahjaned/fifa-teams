@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 
 import options from "../../data/options.json";
 
-import Breadcrumb from "../../Components/Breadcrumb/";
+// import Breadcrumb from "../../Components/Breadcrumb/";
 import ErrorPopUp from "../../Components/ErrorPopUp";
 import DropdownItem from "../../Components/DropdownItem";
 import TextAreaItem from "../../Components/TextAreaItem";
@@ -131,9 +131,9 @@ class TeamFormPage extends React.Component {
     }));
   };
 
-  handleChange = (e) => {
-    e.preventDefault();
-    const { name, value } = e.target;
+  handleChange = (event) => {
+    event.preventDefault();
+    const { name, value } = event.target;
 
     this.setState((prevState) => ({
       form: {
@@ -282,7 +282,6 @@ class TeamFormPage extends React.Component {
 
   render() {
     const { form, formErrors } = this.state;
-
     const { country, league } = form;
     const countries = this.getCountries();
     const leagues = this.getLeagues(country);
