@@ -4,14 +4,14 @@ const media = { desktop: "@media(min-width: 1000px)" };
 
 export const MainContent = styled.div`
   max-width: 414px;
-  margin: 0 16px;
+  margin: 0 auto;
 
   .main-title {
     font-size: 36px;
     font-weight: 700;
     line-height: 41px;
     color: #f2f2f2;
-    padding: 60px 0 8px 0;
+    padding: 100px 0 8px 0;
     margin: 0;
   }
 
@@ -38,7 +38,7 @@ export const MainContent = styled.div`
       color: #f2f2f2;
       font-size: 50px;
       font-weight: 700;
-      padding: 60px 0 8px 0;
+      padding: 100px 0 8px 0;
       margin: 0;
     }
 

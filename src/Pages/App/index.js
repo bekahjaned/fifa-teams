@@ -1,37 +1,66 @@
 import React from "react";
-import "./index.css";
+import "../index.css";
 
-import { ContentWrap } from "../../Elements/ContentWrap/";
-import { Footer } from "../../Elements/Footer/";
+import logo from "../../data/images/CM_Logo.png";
 
-import Hero from "../../Components/Hero/";
-import Main from "../../Components/Main/";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-function App() {
-  return (
-    <ContentWrap>
-      <Hero />
-      <Main />
-      <Footer>
-        <p>
-          If you like this site and its contents, please support us by buying us
-          a coffee. This way we can keep improving this page!
-        </p>
-        <a
-          className="bmc-button"
-          href="https://www.buymeacoffee.com/mannyandrebekah"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-            alt="Buy us a coffee"
-          />
-          <span>Buy us a coffee?</span>
-        </a>
-      </Footer>
-    </ContentWrap>
-  );
+import Home from "../Home/";
+import TeamFormPage from "../TeamFormPage/";
+
+import { NavWrap } from "../../Elements/NavWrap/";
+import { Nav } from "../../Elements/Nav/";
+import { NavLinks } from "../../Elements/NavLinks";
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      color: "#3b003c",
+    };
+  }
+
+  changeColor = (color) => {
+    this.setState({ color });
+  };
+
+  render() {
+    return (
+      <div style={{ backgroundColor: this.state.color }}>
+        <Router>
+          <NavWrap>
+            <Nav>
+              <Link to="/" onClick={() => this.changeColor("#3b003c")}>
+                <img className="logo" src={logo} alt="logo" />
+              </Link>
+              <NavLinks>
+                <Link
+                  to="/team-form"
+                  onClick={() => this.changeColor("#0d0d0d")}
+                >
+                  Submit a Team
+                </Link>
+                {/* <Link to="/sign-up">Sign Up</Link> */}
+              </NavLinks>
+            </Nav>
+
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/team-form">
+                <TeamFormPage />
+              </Route>
+              {/* <Route path="/sign-up">
+              <SignUpPage />
+            </Route> */}
+            </Switch>
+          </NavWrap>
+        </Router>
+      </div>
+    );
+  }
 }
 
 export default App;

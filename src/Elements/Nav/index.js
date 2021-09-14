@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 const media = { desktop: "@media(min-width: 1000px)" };
 
-export const HeroContent = styled.div`
-  display: block;
+export const Nav = styled.div`
   margin: 0 auto;
   max-width: 414px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .logo {
     width: 125px;
@@ -15,13 +17,7 @@ export const HeroContent = styled.div`
   }
 
   ${media.desktop} {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-    grid-gap: 20px;
-    grid-row-gap: 0;
     max-width: 1200px;
-    padding-bottom: 40px;
     margin: 0 auto;
 
     .logo {
@@ -29,7 +25,6 @@ export const HeroContent = styled.div`
       height: 40px;
       padding: 40px 0;
       margin: 0;
-      grid-column-start: span 12;
     }
   }
 `;

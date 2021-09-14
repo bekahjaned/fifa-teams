@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 const media = { desktop: "@media(min-width: 1000px)" };
 
-export const MainWrap = styled.div`
+export const Dropdowns = styled.div`
   margin: 0 auto;
-  background-color: #0d0d0d;
-  padding-bottom: 68px;
+  max-width: 414px;
 
   ${media.desktop} {
-    padding-bottom: 100px;
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 13;
   }
 `;
